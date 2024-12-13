@@ -65,13 +65,13 @@ const Navbar = () => {
 <nav className="w-full bg-white shadow-md px-6 py-3 flex justify-between items-center fixed top-0 left-0 z-50">
 
         {/* Logo */}
-        <div className="flex items-center space-x-1 ">
+        <div className="flex items-center  ">
           <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />
           <div>
-            <h1 className="text-[14px] sm:text-3xl font-bold text-[#2D4591]">
+            <h1 className="text-[17px] sm:text-3xl font-bold text-[#2D4591]">
               Intandem Scholars
             </h1>
-            <p className="text-[12px] sm:text-[15px] text-[#03C300]">
+            <p className="text-[13px] sm:text-[15px] text-[#03C300]">
              "From Admission to Arrival Together"
             </p>
           </div>
