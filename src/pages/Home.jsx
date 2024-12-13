@@ -15,7 +15,7 @@ const Home = () => {
       </div>
       
       {/* Main content section */}
-      <div>
+      <div className="w-full flex-shrink-0">
         <VisaConsultancySlider/>
         <InfoCards/>
         <StudyDestinations/>
