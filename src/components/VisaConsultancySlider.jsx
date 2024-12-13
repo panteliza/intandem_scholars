@@ -23,10 +23,10 @@ const images = [
 
 export default function VisaConsultancySlider() {
   return (
-    <div className="w-full relative z-[0] mb-2">
+    <div className="w-full relative z-[0] ">
       <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]} // Only include the Autoplay module
