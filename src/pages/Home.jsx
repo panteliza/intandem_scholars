@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
+import InfoCards from '../components/InfoCards';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       
       {/* Main content section */}
       <div>
+        <InfoCards/>
         <Contact />
       </div>
     </div>
