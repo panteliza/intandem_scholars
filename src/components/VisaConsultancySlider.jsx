@@ -4,7 +4,7 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 
 // Import all consultancy-related images
-import consultancy1 from '../assets/ab.jpg';
+import consultancy1 from '../assets/jj.jpg';
 import consultancy2 from '../assets/cd.jpg';
 import consultancy3 from '../assets/ef.jpg';
 import consultancy4 from '../assets/gh.jpg';
