@@ -62,7 +62,8 @@ const Navbar = () => {
         }
       `}</style>
 
-<nav className="w-full bg-white shadow-md px-6 py-3 flex justify-between items-center fixed top-0 left-0 z-50">
+<nav className="w-full bg-white shadow-md sm:px-6 sm:py-3 pr-4 flex justify-between items-center fixed top-0 left-0 z-50">
+
 
         {/* Logo */}
         <div className="flex items-center  ">
