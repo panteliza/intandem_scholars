@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Contact from '../components/Contact';
 import InfoCards from '../components/InfoCards';
 import StudyDestinations from '../components/StudyDestinations';
+import WhyChooseUs from '../components/whyChooseUsData';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <div>
         <InfoCards/>
         <StudyDestinations/>
+        <WhyChooseUs/>
         <Contact />
       </div>
     </div>
