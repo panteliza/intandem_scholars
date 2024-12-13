@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       {/* Navbar is fixed, so we add a wrapper with padding */}
-      <div className="pt-[72px]">
+      <div className="pt-[70px]">
         <Navbar />
       </div>
       
