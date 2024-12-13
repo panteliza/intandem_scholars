@@ -33,7 +33,7 @@ const InfoCards = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#F0F4FF] to-[#E4ECF6] py-16 px-8">
+    <div className="bg-gradient-to-r from-[#F0F4FF] to-[#E4ECF6] py-10 px-8">
       <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-3">
         {cardData.map((card, index) => {
           const { ref, inView } = useInView({
