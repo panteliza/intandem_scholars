@@ -69,7 +69,7 @@ const Navbar = () => {
           <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />
           <div>
             <h1 className="text-[12px] sm:text-2xl font-bold text-[#2D4591]">
-              Indandem Scholars
+              Intandem Scholars
             </h1>
             <p className="text-[10px] sm:text-sm text-[#03C300]">
              "From Admission to Arrival Together"
