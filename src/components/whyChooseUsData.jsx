@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
         </h2>
         <div className="h-1 w-16 bg-red-500 mx-auto mt-2"></div>
       </div>
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+      <div className="grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto">
         {whyChooseUsData.map((item, index) => (
           <div
             key={index}
@@ -70,7 +70,9 @@ const WhyChooseUs = () => {
                 className="w-full h-full object-contain spin-on-hover"
               />
             </div>
-            <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+            <h3 className="text-sm md:text-lg font-semibold text-gray-800">
+              {item.title}
+            </h3>
           </div>
         ))}
       </div>
