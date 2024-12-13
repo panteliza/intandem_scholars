@@ -69,8 +69,12 @@ const Contact = () => {
           <h3 className="font-bold sm:text-[20px] text-[18px] text-gray-800 mb-2">
             Our Contact
           </h3>
-          <p className="text-center text-gray-700">+977 1 4534655</p>
-          <p className="text-center text-gray-700">+977 9705566983</p>
+          <a href="tel:+97714534655" className="text-center text-gray-700 hover:text-blue-500">
+            +977 1 4534655
+          </a>
+          <a href="tel:+9779705566983" className="text-center text-gray-700 hover:text-blue-500">
+            +977 9705566983
+          </a>
         </div>
 
         {/* Mail Box */}
@@ -86,7 +90,12 @@ const Contact = () => {
           <h3 className="font-bold sm:text-[20px] text-[18px] text-gray-800 mb-2">
             Mail Us
           </h3>
-          <p className="text-center text-gray-700">supadhyay@intandemscholars.com</p>
+          <a
+            href="mailto:supadhyay@intandemscholars.com"
+            className="text-center text-gray-700 hover:text-blue-500"
+          >
+            supadhyay@intandemscholars.com
+          </a>
         </div>
       </div>
 
@@ -132,33 +141,6 @@ const Contact = () => {
           }
           .transform {
             animation-duration: 0.8s; /* Faster animations on smaller screens */
-          }
-        }
-           @keyframes fadeInDown {
-          0% { opacity: 0; transform: translateY(-20px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInUp {
-          0% { opacity: 0; transform: translateY(20px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-
-        /* Media queries for better performance on smaller screens */
-        @media (max-width: 768px) {
-          h1 {
-            font-size: 1.5rem; /* Adjust heading size */
-            animation-duration: 0.8s; /* Faster animations */
-          }
-          p {
-            font-size: 1rem; /* Adjust text size */
-            animation-duration: 0.8s; /* Faster animations */
-          }
-          img {
-            animation-duration: 0.8s; /* Faster animations */
           }
         }
       `}</style>

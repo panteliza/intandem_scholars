@@ -38,7 +38,7 @@ export default function VisaConsultancySlider() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[300px] sm:h-[600px] md:h-[640px] 2xl:h-[900px] md:object-cover object-contain object-center"
+                className="w-full h-[300px] sm:h-[620px] md:h-[640px] 2xl:h-[900px] object-cover  object-center"
               />
             </div>
           </SwiperSlide>
