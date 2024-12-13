@@ -65,7 +65,7 @@ const Navbar = () => {
 <nav className="w-full bg-white shadow-md px-6 flex justify-between items-center fixed top-0 left-0 z-50">
 
         {/* Logo */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-1 ">
           <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />
           <div>
             <h1 className="text-[12px] sm:text-2xl font-bold text-[#2D4591]">
@@ -166,7 +166,7 @@ const Navbar = () => {
                 {label}
               </Link>
             ))}
-            <div className="flex justify-center gap-4 mt-4 px-6">
+            <div className="flex justify-center gap-2 mt-4 px-6">
               <img src={img1} alt="Icon 1" className="h-[40px] w-[40px] object-contain" />
               <img src={img2} alt="Icon 2" className="h-[40px] w-[40px] object-contain" />
               <img src={img3} alt="Icon 3" className="h-[40px] w-[40px] object-contain" />
