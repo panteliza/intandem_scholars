@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
-import { HiOutlineMenuAlt2 } from 'react-icons/hi';
+
 import { MdOutlineClose } from 'react-icons/md';
 import { FiAlignJustify } from "react-icons/fi";
 import logo from '../assets/logo1.png'; // Main logo
@@ -62,7 +62,8 @@ const Navbar = () => {
         }
       `}</style>
 
-      <nav className="w-full bg-white shadow-md px-6 py-2 flex justify-between items-center">
+<nav className="w-full bg-white shadow-md px-6 flex justify-between items-center fixed top-0 left-0 z-50">
+
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />

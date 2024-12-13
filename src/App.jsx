@@ -4,6 +4,7 @@ import './App.css'; // Add this for styling
 import whatsappImage from './assets/whatsapp.png'; // Import WhatsApp image
 
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
          
           <Route path="/" element={<Home />} />
           <Route path="/intandem" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
          
         </Routes>
 
