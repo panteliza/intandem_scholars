@@ -6,6 +6,10 @@ import whatsappImage from './assets/whatsapp.png'; // Import WhatsApp image
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import AustraliaPage from './pages/AustraliaPage';
+import USAPage from './pages/USAPage ';
+import CanadaPage from './pages/CanadaPage';
+import UKPage from './pages/UkPage';
+
 
 
 
@@ -19,7 +23,9 @@ const App = () => {
          
           <Route path="/" element={<Home />} />
           <Route path="/intandem" element={<Home />} />
-         
+          <Route path="/study-in-canada" element={<CanadaPage />} />
+          <Route path="/study-in-usa" element={<USAPage />} />
+          <Route path="/study-in-uk" element={<UKPage />} />
           <Route path="/study-in-australia" element={<AustraliaPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

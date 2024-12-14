@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import australiaImg from "../assets/aus.jpg"; 
 import visaProcessImg from "../assets/111.jpg";
-import scholarshipImg from "../assets/22.jpg";
+
 
 const AustraliaPage = () => {
   useEffect(() => {
