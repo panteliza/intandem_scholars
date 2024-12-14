@@ -85,42 +85,43 @@ const StudyDestinations = () => {
             }`}
           >
             {/* Image Section */}
-            <div className="relative">
-              <img
-                src={destination.image}
-                alt={destination.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="absolute -bottom-5 right-5 bg-white rounded-full p-1 shadow-lg border-4 border-gray-200">
-                <img
-                  src={destination.flag}
-                  alt={`${destination.title} Flag`}
-                  className="w-10 h-10 rounded-full object-contain"
-                />
-              </div>
-            </div>
-            {/* Hover Overlay */}
-            <div
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-center bg-cover flex flex-col justify-center items-center text-white p-4"
-              style={{
-                backgroundImage: `url(${destination.image})`,
-                backgroundBlendMode: "overlay",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
-              }}
+            <a
+              href={destination.link}
+              className="block relative group-focus:outline-none focus:outline-none"
             >
-              <h3 className="text-xl font-bold">{destination.title}</h3>
-              <a
-                href={destination.link}
-                className="mt-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-full shadow-md hover:bg-gray-200"
+              <div className="relative">
+                <img
+                  src={destination.image}
+                  alt={destination.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute -bottom-5 right-5 bg-white rounded-full p-1 shadow-lg border-4 border-gray-200">
+                  <img
+                    src={destination.flag}
+                    alt={`${destination.title} Flag`}
+                    className="w-10 h-10 rounded-full object-contain"
+                  />
+                </div>
+              </div>
+              {/* Hover Overlay */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-center bg-cover flex flex-col justify-center items-center text-white p-4"
+                style={{
+                  backgroundImage: `url(${destination.image})`,
+                  backgroundBlendMode: "overlay",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                }}
               >
-                Learn more
-              </a>
-            </div>
+                <h3 className="text-xl font-bold">{destination.title}</h3>
+                <div className="mt-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-full shadow-md hover:bg-gray-200">
+                  Learn more
+                </div>
+              </div>
+            </a>
             {/* Content Section */}
             <div className="p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">{destination.title}</h3>
               <p className="text-gray-600 mt-2">{destination.description}</p>
-              
             </div>
           </div>
         ))}
