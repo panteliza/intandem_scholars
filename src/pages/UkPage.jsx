@@ -42,7 +42,7 @@ const UKPage = () => {
       </section>
 
       {/* Facts About the UK */}
-      <section className="bg-white py-16 px-6">
+      <section className="bg-white   px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Facts About the UK</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -64,7 +64,7 @@ const UKPage = () => {
       </section>
 
       {/* Reasons to Study in the UK */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-7 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Reasons to Study in the UK</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
