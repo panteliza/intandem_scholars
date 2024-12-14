@@ -120,12 +120,7 @@ const StudyDestinations = () => {
             <div className="p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">{destination.title}</h3>
               <p className="text-gray-600 mt-2">{destination.description}</p>
-              <a
-                href={destination.link}
-                className="mt-4 inline-block text-blue-500 hover:underline font-semibold"
-              >
-                Learn more
-              </a>
+              
             </div>
           </div>
         ))}
