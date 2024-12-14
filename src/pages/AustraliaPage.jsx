@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import australiaImg from "../assets/australia.jpg"; // Replace with your Australia image
-import visaProcessImg from "../assets/11.jpg"; // Replace with your Visa Process image
-import scholarshipImg from "../assets/22.jpg"; // Replace with your Scholarship image
+import australiaImg from "../assets/aus.jpg"; 
+import visaProcessImg from "../assets/111.jpg";
+import scholarshipImg from "../assets/22.jpg";
 
 const AustraliaPage = () => {
-  // Scroll to the top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div>
-      {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
@@ -28,16 +26,16 @@ const AustraliaPage = () => {
           <img
             src={australiaImg}
             alt="Australia"
-            className="w-full lg:w-1/3 mt-6 lg:mt-0 rounded-lg shadow-lg"
+            className="w-full lg:w-1/2 mt-6 lg:mt-0 rounded-lg shadow-lg"
           />
         </div>
       </section>
 
       {/* Why Study in Australia */}
-      <section className="bg-gray-50 py-12 px-6">
+      <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Study in Australia from Nepal?</h2>
-          <p className="text-lg text-gray-700">
+          <h2 className="text-3xl font-bold mb-8">Why Study in Australia from Nepal?</h2>
+          <p className="text-lg ">
             Australia offers students a dynamic, multicultural experience, access to globally ranked
             universities, and opportunities for professional and personal growth.
           </p>
@@ -45,11 +43,11 @@ const AustraliaPage = () => {
       </section>
 
       {/* Facts About Australia */}
-      <section className="bg-white py-12 px-6">
+      <section className="bg-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Facts About Australia</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ul className="space-y-3 text-gray-700">
+          <h2 className="text-3xl font-bold text-center mb-8">Facts About Australia</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <ul className="space-y-4 text-gray-700">
               <li>Australia is the world’s 13th-largest economy.</li>
               <li>Australia is the fourth-happiest country globally.</li>
               <li>Over 260 languages are spoken in Australia.</li>
@@ -60,7 +58,7 @@ const AustraliaPage = () => {
                 8 out of the top 100 universities globally are located in Australia.
               </li>
             </ul>
-            <ul className="space-y-3 text-gray-700">
+            <ul className="space-y-4 text-gray-700">
               <li>Australia ranks 9th globally in the university system ranking.</li>
               <li>
                 It is the 3rd most popular destination for international students.
@@ -77,10 +75,10 @@ const AustraliaPage = () => {
       </section>
 
       {/* Reasons to Study in Australia */}
-      <section className="bg-gray-50 py-12 px-6">
+      <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Reasons to Study in Australia</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-8">Reasons to Study in Australia</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-semibold">1. High-Quality Education</h3>
               <p className="text-gray-700">
@@ -118,50 +116,101 @@ const AustraliaPage = () => {
       </section>
 
       {/* Student Visa Process */}
-      <section className="bg-white py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+      <section className="bg-white  py-12 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6">
           <div>
             <h2 className="text-3xl font-bold mb-4">Student Visa Process for Australia</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              The student visa process includes receiving your COE, financial proof, health
-              insurance, and fulfilling all requirements by the Department of Home Affairs.
-            </p>
-            <p className="text-lg text-gray-700">
-              After submission, students undergo a health examination and, in some cases, an
-              interview at the Australian embassy or consulate.
+            <p className="text-lg text-gray-700 mb-6">
+            The student visa process for Australia involves several steps. Firstly, you need to be accepted into a recognized Australian educational institution and receive a Confirmation of Enrollment (CoE) letter. Then, you can create an account on the Department of Home Affairs website and submit your student visa application online. You will need to provide documents such as your CoE, proof of financial capacity, health insurance, and English language proficiency. After submitting the application, you will be required to undergo a health examination and may need to attend an interview at the Australian embassy or consulate.
             </p>
           </div>
           <img
             src={visaProcessImg}
             alt="Visa Process"
-            className="w-full lg:w-1/3 rounded-lg shadow-lg"
+            className="w-full lg:w-1/2 rounded-lg shadow-lg"
           />
         </div>
       </section>
 
-      {/* Scholarships Section */}
-      <section className="bg-gray-50 py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
-          <img
-            src={scholarshipImg}
-            alt="Scholarships"
-            className="w-full lg:w-1/3 rounded-lg shadow-lg"
-          />
+      {/* Scholarships and Living Costs */}
+      <section className="bg-gray-50    px-6">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6">
+          
           <div>
-            <h2 className="text-3xl font-bold mb-4">Scholarships in Australia</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Australia offers a wide range of scholarships for international students, including
-              merit-based, research, and need-based financial support.
-            </p>
-            <p className="text-lg text-gray-700">
-              Scholarships help cover tuition fees, living expenses, or both, depending on the
-              program and eligibility criteria.
-            </p>
-          </div>
+  <h2 className="text-3xl font-bold mb-4">Fee, Scholarships & Cost of Living</h2>
+  
+  <p className="text-lg text-gray-700 mb-6">
+    Moving from Nepal to Australia and studying here as an international student is likely to be overwhelming. Therefore, being prepared for the standard of living is necessary, and this includes understanding the costs involved. There are mainly three areas that you will have to consider while gathering and segmenting your finances for your study stay in Australia.
+  </p>
+  
+  <p className="text-lg text-gray-700 mb-6">
+    Let’s take a look at the fees you have to pay for admission in a university, the possible scholarship opportunities that you can avail, and the cost of living you may have to incur.
+  </p>
+
+  <h3 className="text-2xl font-semibold mb-4">The Fee Structure for Studying in Australia</h3>
+  <p className="text-lg text-gray-700 mb-6">
+    Before you arrange finances, one of the most daunting tasks is to get admission at a university. We’ve helped more than 100,000 international students achieve their academic and professional goals in Australia. Expert Education is your companion throughout the process of application and admission at your preferred institution. It’s a simple process; we will take you through it, from structured budgets to study plans.
+  </p>
+  <p className="text-lg text-gray-700 mb-6">
+    The cost of studying depends on the educational provider you select, the location, and the chosen level of study.
+  </p>
+
+  <ul className="list-disc list-inside text-gray-700 mb-6">
+    <li>Schools in Australia may cost around $7,800 to $30,000 (yearly).</li>
+    <li>Undergraduate Bachelor Degree is around $15,000 to $33,000 (yearly).</li>
+    <li>A postgraduate Master’s Degree can vary from $20,000 up to $37,000 (yearly).</li>
+    <li>Vocational Education and Training is around $4,000 to $22,000 (yearly).</li>
+    <li>English language studies can cost around $300 per week.</li>
+    <li>Doctoral degrees are around $14,000 to $37,000 (yearly).</li>
+  </ul>
+
+  <h3 className="text-2xl font-semibold mb-4">Scholarships – Your Ticket to Financial Support</h3>
+  <p className="text-lg text-gray-700 mb-6">
+    Various scholarship opportunities are offered to international students to study without worrying about financial support. Every scholarship to study in Australia has a different set of requirements based on the institution selected to pursue studies.
+  </p>
+  <p className="text-lg text-gray-700 mb-6">
+    Parents seeking a scholarship for their child can also directly visit the respective university website for more information.
+  </p>
+  <p className="text-lg text-gray-700 mb-6">
+    However, if you need a helping hand, we can assist in advising the best scholarship to study in Australia and aid in its application processes.
+  </p>
+
+  <h3 className="text-2xl font-semibold mb-4">Travel and Accommodation</h3>
+  <p className="text-lg text-gray-700 mb-6">
+    The average cost of living in Australia is a crucial factor to consider during your application and financial preparation.
+  </p>
+
+  <p className="text-lg text-gray-700 mb-4">Here are some of the approximate weekly costs involved in sharing a rental to home-staying and more:</p>
+  <ul className="list-disc list-inside text-gray-700 mb-6">
+    <li>Homestay – $235 to $325 per week</li>
+    <li>Rental – $185 to $440 per week</li>
+    <li>Shared Rental – $95 to $215 per week</li>
+    <li>On-campus – $110 to $280 per week</li>
+    <li>Hostels, Guesthouses – $90 to $150 per week</li>
+  </ul>
+
+  <p className="text-lg text-gray-700 mb-4">
+    If you choose a boarding school for your child in Australia, the yearly cost can range from $11,000 to $22,000.
+  </p>
+  
+  <p className="text-lg text-gray-700 mb-4">Similarly, other approximate weekly costs include:</p>
+  <ul className="list-disc list-inside text-gray-700 mb-6">
+    <li>Gas and electricity – $10 to $20 per week</li>
+    <li>Groceries and eating out – $140 to $280 per week</li>
+    <li>Phone and Internet – $15 to $30 per week</li>
+    <li>Public transport – $30 to $60 per week</li>
+    <li>Private car – $150 to $260 per week</li>
+    <li>Entertainment – $80 to $150 per week</li>
+  </ul>
+
+  <p className="text-lg text-gray-700 mb-6">
+    If you are a resident of Nepal, then you are requested to attend the Australian Visa Application Centre in Kathmandu in person to submit your biometrics.
+  </p>
+</div>
+
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
