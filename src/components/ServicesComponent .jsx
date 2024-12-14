@@ -72,16 +72,20 @@ const ServicesSection = () => {
         </div>
 
         {/* Images Section */}
-        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 fade-in opacity-0 transition-all duration-1000">
+        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-1 gap-6 fade-in opacity-0 transition-all duration-1000">
           {/* First Image */}
           <div
-            className="w-full h-64 lg:h-80 bg-cover bg-center rounded-lg shadow-lg transform hover:scale-110 hover:rotate-3 transition-all duration-700"
-            style={{ backgroundImage: `url(${graduateImg})` }}
+            className="w-full h-64 sm:h-48 bg-cover bg-center rounded-lg shadow-lg transform hover:scale-110 hover:rotate-3 transition-all duration-700"
+            style={{
+              backgroundImage: `url(${graduateImg})`,
+            }}
           ></div>
           {/* Second Image */}
           <div
-            className="w-full h-64 lg:h-72 bg-cover bg-center rounded-lg shadow-lg transform hover:scale-110 hover:-rotate-3 transition-all duration-700"
-            style={{ backgroundImage: `url(${groupStudentsImg})` }}
+            className="w-full h-64 sm:h-48 bg-cover bg-center rounded-lg shadow-lg transform hover:scale-110 hover:-rotate-3 transition-all duration-700"
+            style={{
+              backgroundImage: `url(${groupStudentsImg})`,
+            }}
           ></div>
         </div>
       </div>
@@ -96,6 +100,16 @@ const ServicesSection = () => {
           .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
+          }
+
+          /* Ensure Images Display Properly on Smaller Screens */
+          @media (max-width: 768px) {
+            .lg\\:w-1\\/2 {
+              width: 100%;
+            }
+            .grid-cols-1 {
+              grid-template-columns: 1fr;
+            }
           }
         `}
       </style>
