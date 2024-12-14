@@ -77,12 +77,14 @@ const StudyDestinations = () => {
       </div>
       <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
         {destinations.map((destination, index) => (
-          <div
+          <a
             key={index}
+            href={destination.link}
             data-index={index}
             className={`destination-card relative group py-5 px-5 bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-transform transform hover:-translate-y-3 ${
               visibleCards.includes(index.toString()) ? "animate-zoomIn" : "opacity-0"
             }`}
+            style={{ textDecoration: "none" }} // Ensure links are clickable
           >
             {/* Image Section */}
             <div className="relative">
@@ -99,30 +101,12 @@ const StudyDestinations = () => {
                 />
               </div>
             </div>
-            {/* Hover Overlay */}
-            <div
-              className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-center bg-cover flex flex-col justify-center items-center text-white p-4"
-              style={{
-                backgroundImage: `url(${destination.image})`,
-                backgroundBlendMode: "overlay",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
-              }}
-            >
-              <h3 className="text-xl font-bold">{destination.title}</h3>
-              <a
-                href={destination.link}
-                className="mt-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-full shadow-md hover:bg-gray-200"
-              >
-                Learn more
-              </a>
-            </div>
             {/* Content Section */}
             <div className="p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">{destination.title}</h3>
               <p className="text-gray-600 mt-2">{destination.description}</p>
-              
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -153,6 +137,11 @@ const StudyDestinations = () => {
 
           .animate-zoomIn {
             animation: zoomIn 1.5s ease-out forwards;
+          }
+
+          .destination-card a {
+            text-decoration: none;
+            color: inherit;
           }
         `}
       </style>
