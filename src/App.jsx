@@ -5,6 +5,7 @@ import whatsappImage from './assets/whatsapp.png'; // Import WhatsApp image
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import AustraliaPage from './pages/AustraliaPage';
 
 
 
@@ -18,8 +19,9 @@ const App = () => {
          
           <Route path="/" element={<Home />} />
           <Route path="/intandem" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
          
+          <Route path="/study-in-australia" element={<AustraliaPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         {/* WhatsApp button as an image */}

@@ -36,7 +36,7 @@ const StudyDestinations = () => {
       title: "Study in Australia",
       description:
         "Widen your career scope by studying in Australia in some of the top globally ranked universities.",
-      link: "Learn more",
+      link: "/study-in-australia",
     },
     {
       image: canadaImage,
@@ -44,15 +44,15 @@ const StudyDestinations = () => {
       title: "Study in Canada",
       description:
         "Enjoy quality education and an affordable fee structure while pursuing your studies in Canada.",
-      link: "Learn more",
+      link: "/study-in-canada",
     },
     {
       image: usaImage,
       flag: usaFlag,
-      title: "Study in USA ",
+      title: "Study in USA",
       description:
         "Experience academic excellence with the world’s most advanced internet and technology structure in the US.",
-      link: "Learn more",
+      link: "/study-in-usa",
     },
     {
       image: ukImage,
@@ -60,7 +60,7 @@ const StudyDestinations = () => {
       title: "Study in the UK",
       description:
         "Plenty of research facilities and even more opportunities to explore your career options in the UK.",
-      link: "Learn more",
+      link: "/study-in-uk",
     },
   ];
 
@@ -75,12 +75,12 @@ const StudyDestinations = () => {
         </h2>
         <p className="text-gray-600 mt-2">Choose your study destination</p>
       </div>
-      <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto ">
+      <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
         {destinations.map((destination, index) => (
           <div
             key={index}
             data-index={index}
-            className={`destination-card relative group py-5 px-5 bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-transform transform hover:-translate-y-3  ${
+            className={`destination-card relative group py-5 px-5 bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-transform transform hover:-translate-y-3 ${
               visibleCards.includes(index.toString()) ? "animate-zoomIn" : "opacity-0"
             }`}
           >
@@ -91,7 +91,7 @@ const StudyDestinations = () => {
                 alt={destination.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="absolute -bottom-5 right-5 bg-white rounded-full p-1 shadow-lg border-4 border-gray-200 ">
+              <div className="absolute -bottom-5 right-5 bg-white rounded-full p-1 shadow-lg border-4 border-gray-200">
                 <img
                   src={destination.flag}
                   alt={`${destination.title} Flag`}
@@ -109,19 +109,23 @@ const StudyDestinations = () => {
               }}
             >
               <h3 className="text-xl font-bold">{destination.title}</h3>
-              <button
+              <a
+                href={destination.link}
                 className="mt-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-full shadow-md hover:bg-gray-200"
               >
-                {destination.link}
-              </button>
+                Learn more
+              </a>
             </div>
             {/* Content Section */}
             <div className="p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-800">
-                {destination.title}
-              </h3>
+              <h3 className="text-xl font-bold text-gray-800">{destination.title}</h3>
               <p className="text-gray-600 mt-2">{destination.description}</p>
-             
+              <a
+                href={destination.link}
+                className="mt-4 inline-block text-blue-500 hover:underline font-semibold"
+              >
+                Learn more
+              </a>
             </div>
           </div>
         ))}

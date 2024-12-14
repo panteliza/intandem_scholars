@@ -66,7 +66,7 @@ const Footer = () => {
             <img
               src={aawazLogo}
               alt="Aawaz Logo"
-              className="h-[200px] w-[240px] rounded-full transition-transform duration-700 ease-in-out hover:scale-110"
+              className="h-[200px] w-[240px] rounded-full transition-transform duration-700 ease-in-out hover:scale-110 "
             />
           </Link>
           <div className="flex gap-1 sm:gap-3">

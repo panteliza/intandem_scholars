@@ -6,6 +6,8 @@ import StudyDestinations from '../components/StudyDestinations';
 import WhyChooseUs from '../components/whyChooseUsData';
 import VisaConsultancySlider from '../components/VisaConsultancySlider';
 import Footer from '../components/Footer';
+import ServicesComponent from '../components/ServicesComponent ';
+import Reviews from '../components/Reviews';
 
 const Home = () => {
   return (
@@ -20,8 +22,10 @@ const Home = () => {
         <VisaConsultancySlider/>
         <InfoCards/>
         <StudyDestinations/>
+        <ServicesComponent/>
         <WhyChooseUs/>
         <Contact />
+        <Reviews/>
         <Footer/>
       </div>
     </div>
