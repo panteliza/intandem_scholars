@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
   const toggleDropdown = () => setShowDropdown(!showDropdown);
-  const toggleSidebar = () => setShowSidebar(!showSidebar1);
+  const toggleSidebar = () => setShowSidebar(!showSidebar);
 
   const toggleDropdown1 = () => setShowDropdown1(!showDropdown1);
   const toggleSidebar1 = () => setShowSidebar1(!showSidebar1);
