@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TeamImage from "../assets/can.jpg"; // Ensure this path is correct
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
 
 const AboutIntandem = () => {
+  useEffect(() => {
+    // Scroll to the top when the page loads
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full flex-shrink-0 overflow-hidden">
       <Navbar />
-      <div className="min-h-screen flex flex-col items-center py-10 animate-fadeIn">
+      <div className="min-h-screen flex flex-col items-center py-10 pt-[100px] animate-fadeIn">
+        {/* Adjusted padding to prevent content overlap */}
         <h1 className="text-4xl font-bold text-blue-900 mb-6 animate-slideDown">
           About Intandem Scholars
         </h1>
