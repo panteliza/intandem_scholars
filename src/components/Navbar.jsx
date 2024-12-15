@@ -5,7 +5,7 @@ import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 import { MdOutlineClose } from 'react-icons/md';
 import { FiAlignJustify } from "react-icons/fi";
 import logo from '../assets/logo1.png'; // Main logo
-import logo2 from '../assets/logo1.png'; // Sidebar logo
+import logo1 from '../assets/logo.png'; // Sidebar logo
 import img1 from '../assets/facebook.png';
 import img2 from '../assets/googlemap.png';
 import img3 from '../assets/whatsapp.png';
@@ -195,7 +195,7 @@ const Navbar = () => {
             />
             <div className="flex justify-center items-center py-6">
               <img
-                src={logo2}
+                src={logo1}
                 alt="Intandem Scholars Sidebar Logo"
                 className="h-[120px] object-contain zoom-effect"
               />
