@@ -42,7 +42,7 @@ const Navbar = () => {
   const [showSidebar1, setShowSidebar1] = useState(false);
 
 
-  const toggleDropdown = () => setShowDropdown(!showDropdown1);
+  const toggleDropdown = () => setShowDropdown(!showDropdown);
   const toggleSidebar = () => setShowSidebar(!showSidebar1);
 
   const toggleDropdown1 = () => setShowDropdown1(!showDropdown1);
