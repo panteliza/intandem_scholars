@@ -10,6 +10,7 @@ import USAPage from './pages/USAPage ';
 import CanadaPage from './pages/CanadaPage';
 import UKPage from './pages/UkPage';
 import About from './pages/About';
+import VisaApplicationPage from './pages/VisaApplicationPage';
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/study-in-australia" element={<AustraliaPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/visa-preparation" element={<VisaApplicationPage />} />
         </Routes>
 
         {/* WhatsApp button as an image */}

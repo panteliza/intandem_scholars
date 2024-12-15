@@ -1,79 +1,66 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
-
-import { MdOutlineClose } from 'react-icons/md';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { MdOutlineClose } from "react-icons/md";
 import { FiAlignJustify } from "react-icons/fi";
-import logo from '../assets/logo1.png'; // Main logo
-import logo2 from '../assets/logo1.png'; // Sidebar logo
-import img1 from '../assets/facebook.png';
-import img2 from '../assets/googlemap.png';
-import img3 from '../assets/whatsapp.png';
-import img4 from '../assets/linkedin.png';
+import logo from "../assets/logo1.png";
+import logo2 from "../assets/logo1.png";
+import img1 from "../assets/facebook.png";
+import img2 from "../assets/googlemap.png";
+import img3 from "../assets/whatsapp.png";
+import img4 from "../assets/linkedin.png";
 
+// Data for Services and Study Abroad Links
 const services = [
-  { path: '/college-admissions', label: 'College & University Admissions' },
-  { path: '/visa-preparation', label: 'Visa Preparation' },
-  { path: '/career-counselling', label: 'Career Counselling' },
-  { path: '/academic-guidance', label: 'Academic Guidance' },
-  { path: '/pre-departure', label: 'Pre Departure Briefing' },
-  { path: '/visa-lodgement', label: 'Visa Lodgement' },
+  { path: "/college-admissions", label: "College & University Admissions" },
+  { path: "/visa-preparation", label: "Visa Preparation" },
+  { path: "/career-counselling", label: "Career Counselling" },
+  { path: "/academic-guidance", label: "Academic Guidance" },
+  { path: "/pre-departure", label: "Pre Departure Briefing" },
+  { path: "/visa-lodgement", label: "Visa Lodgement" },
+];
+
+const abroad = [
+  { path: "/study-in-usa", label: "Study In USA" },
+  { path: "/study-in-australia", label: "Study In Australia" },
+  { path: "/study-in-canada", label: "Study In Canada" },
+  { path: "/study-in-uk", label: "Study In UK" },
 ];
 
 const navLinks = [
-  { path: '/about', label: 'About' },
- 
-  { path: '/contact', label: 'Contact us' },
+  { path: "/about", label: "About" },
+  { path: "/contact", label: "Contact us" },
 ];
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showServices, setShowServices] = useState(false);
+  const [showAbroad, setShowAbroad] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
 
-  const toggleDropdown = () => setShowDropdown(!showDropdown);
-  const toggleSidebar = () => setShowSidebar(!showSidebar);
+  const toggleDropdown = (dropdown) => {
+    if (dropdown === "services") {
+      setShowServices(!showServices);
+      setShowAbroad(false); // Close the Study Abroad dropdown
+    } else if (dropdown === "abroad") {
+      setShowAbroad(!showAbroad);
+      setShowServices(false); // Close the Services dropdown
+    }
+  };
 
-  const renderServicesDropdown = () => (
-    <div className="bg-white mt-2 rounded-lg shadow-lg">
-      {services.map(({ path, label }) => (
-        <Link
-          key={path}
-          to={path}
-          className="block bg-gray-100 hover:bg-[#07A2BB] text-gray-700 text-sm text-center py-2 px-2 rounded-md shadow transition-all"
-          onClick={() => {
-            setShowDropdown(false);
-            setShowSidebar(false);
-          }}
-        >
-          {label}
-        </Link>
-      ))}
-    </div>
-  );
+  const toggleSidebar = () => setShowSidebar(!showSidebar);
 
   return (
     <>
-      <style>{`
-        .zoom-effect {
-          transition: transform 0.3s ease-in-out;
-        }
-        .zoom-effect:hover {
-          transform: scale(1.1);
-        }
-      `}</style>
-
-<nav className="w-full bg-white shadow-md sm:px-6 sm:py-3 pr-4 flex justify-between items-center fixed top-0 left-0 z-50">
-
-
+      <nav className="w-full bg-white shadow-md sm:px-6 sm:py-3 pr-4 flex justify-between items-center fixed top-0 left-0 z-50">
         {/* Logo */}
-        <div className="flex items-center  ">
-          <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />
+        <div className="flex items-center">
+          <img src={logo} alt="Logo" className="h-[70px] w-[80px]" />
           <div>
             <h1 className="text-[17px] sm:text-3xl font-bold text-[#2D4591]">
               Intandem Scholars
             </h1>
             <p className="text-[13px] sm:text-[15px] text-[#03C300]">
-             "From Admission to Arrival Together"
+              "From Admission to Arrival Together"
             </p>
           </div>
         </div>
@@ -83,22 +70,23 @@ const Navbar = () => {
           <Link to="/" className="text-[#099BA4] font-medium hover:text-[#038A58]">
             Home
           </Link>
-          <div
-            className="relative text-gray-700 cursor-pointer hover:text-[#038A58]"
-            onClick={toggleDropdown}
-          >
-            <div className="flex items-center gap-1">
+
+          {/* Services Dropdown */}
+          <div className="relative cursor-pointer">
+            <div
+              className="flex items-center gap-1 text-gray-700 hover:text-[#038A58]"
+              onClick={() => toggleDropdown("services")}
+            >
               <span>Services</span>
-              {showDropdown ? <AiOutlineUp /> : <AiOutlineDown />}
+              {showServices ? <AiOutlineUp /> : <AiOutlineDown />}
             </div>
-            {showDropdown && (
-              <div className="absolute top-12 bg-white p-2 grid grid-cols-1 sm:grid-cols-2 gap-2 z-[1] shadow-lg rounded-lg w-[250px]">
+            {showServices && (
+              <div className="absolute top-12 bg-white rounded-lg shadow-lg w-[250px]">
                 {services.map(({ path, label }) => (
                   <Link
                     key={path}
                     to={path}
-                    className="block bg-gray-100 hover:bg-[#07A2BB] text-gray-700 text-sm text-center py-2 px-2 rounded-md shadow transition-all"
-                    onClick={() => setShowDropdown(false)}
+                    className="block py-2 px-4 hover:bg-[#07A2BB] text-gray-700 rounded-md transition-all"
                   >
                     {label}
                   </Link>
@@ -106,73 +94,102 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          {navLinks.map(({ path, label }) => (
-            <Link
-              key={path}
-              to={path}
-              className="text-gray-700 hover:text-[#07A2BB] transition-all"
+
+          {/* Study Abroad Dropdown */}
+          <div className="relative cursor-pointer">
+            <div
+              className="flex items-center gap-1 text-gray-700 hover:text-[#038A58]"
+              onClick={() => toggleDropdown("abroad")}
             >
+              <span>Study Abroad</span>
+              {showAbroad ? <AiOutlineUp /> : <AiOutlineDown />}
+            </div>
+            {showAbroad && (
+              <div className="absolute top-12 bg-white rounded-lg shadow-lg w-[250px]">
+                {abroad.map(({ path, label }) => (
+                  <Link
+                    key={path}
+                    to={path}
+                    className="block py-2 px-4 hover:bg-[#07A2BB] text-gray-700 rounded-md transition-all"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {navLinks.map(({ path, label }) => (
+            <Link key={path} to={path} className="hover:text-[#07A2BB]">
               {label}
             </Link>
           ))}
-          <div className="flex gap-2">
-            <img src={img1} alt="Icon 1" className="h-[40px] w-[40px] object-contain" />
-            <img src={img2} alt="Icon 2" className="h-[40px] w-[40px] object-contain" />
-            <img src={img3} alt="Icon 3" className="h-[40px] w-[40px] object-contain" />
-            <img src={img4} alt="LinkedIn Icon" className="h-[40px] w-[40px] object-contain" />
-          </div>
         </div>
 
         {/* Mobile Menu Button */}
-        <FiAlignJustify className="text-3xl lg:hidden cursor-pointer text-[#286CFF]" onClick={toggleSidebar} />
+        <FiAlignJustify
+          className="text-3xl lg:hidden cursor-pointer text-[#286CFF]"
+          onClick={toggleSidebar}
+        />
 
         {/* Mobile Sidebar */}
         {showSidebar && (
           <div className="fixed top-0 left-0 w-[300px] h-full bg-white shadow-lg z-[2] flex flex-col">
             <MdOutlineClose
-              className="absolute top-4 right-4 text-3xl text-gray-700 cursor-pointer hover:text-gray-900"
+              className="absolute top-4 right-4 text-3xl cursor-pointer"
               onClick={toggleSidebar}
             />
-            <div className="flex justify-center items-center py-6">
-              <img
-                src={logo2}
-                alt="Intandem Scholars Sidebar Logo"
-                className="h-[120px] object-contain zoom-effect"
-              />
+            <div className="py-6 text-center">
+              <img src={logo2} alt="Logo" className="h-[100px] mx-auto" />
             </div>
-            <Link
-              to="/"
-              className="text-[#099BA4] font-medium py-3 px-6 border-b border-gray-200 hover:bg-gray-100"
-              onClick={toggleSidebar}
-            >
+            <Link to="/" className="px-6 py-3 hover:bg-gray-200">
               Home
             </Link>
-            <div className="border-b border-gray-200 px-6">
+
+            {/* Mobile Services Dropdown */}
+            <div className="border-t">
               <button
-                onClick={toggleDropdown}
-                className="flex justify-between items-center w-full py-3 text-gray-700"
+                onClick={() => toggleDropdown("services")}
+                className="flex justify-between items-center px-6 py-3 w-full text-gray-700"
               >
-                <span>Services</span>
-                {showDropdown ? <AiOutlineUp /> : <AiOutlineDown />}
+                Services {showServices ? <AiOutlineUp /> : <AiOutlineDown />}
               </button>
-              {showDropdown && <div className="mt-2">{renderServicesDropdown()}</div>}
+              {showServices && (
+                <div>
+                  {services.map(({ path, label }) => (
+                    <Link
+                      key={path}
+                      to={path}
+                      className="block px-8 py-2 hover:bg-gray-200"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
-            {navLinks.map(({ path, label }) => (
-              <Link
-                key={path}
-                to={path}
-                className="py-3 px-6 border-b border-gray-200 hover:bg-[#07A2BB]"
-                onClick={toggleSidebar}
+
+            {/* Mobile Study Abroad Dropdown */}
+            <div className="border-t">
+              <button
+                onClick={() => toggleDropdown("abroad")}
+                className="flex justify-between items-center px-6 py-3 w-full text-gray-700"
               >
-                {label}
-              </Link>
-            ))}
-            <div className="flex justify-center gap-2 mt-4 px-6">
-              <img src={img1} alt="Icon 1" className="h-[40px] w-[40px] object-contain" />
-              <img src={img2} alt="Icon 2" className="h-[40px] w-[40px] object-contain" />
-              <img src={img3} alt="Icon 3" className="h-[40px] w-[40px] object-contain" />
-              <img src={img4} alt="LinkedIn Icon" className="h-[40px] w-[40px] object-contain" />
-              
+                Study Abroad {showAbroad ? <AiOutlineUp /> : <AiOutlineDown />}
+              </button>
+              {showAbroad && (
+                <div>
+                  {abroad.map(({ path, label }) => (
+                    <Link
+                      key={path}
+                      to={path}
+                      className="block px-8 py-2 hover:bg-gray-200"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
