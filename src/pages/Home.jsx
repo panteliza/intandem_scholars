@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import ServicesComponent from '../components/ServicesComponent ';
 import Reviews from '../components/Reviews';
 
+
 const Home = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const Home = () => {
         <ServicesComponent/>
         <WhyChooseUs/>
         <Contact />
+       
         <Reviews/>
         <Footer/>
       </div>
