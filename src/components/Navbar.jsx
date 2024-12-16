@@ -108,7 +108,7 @@ const Navbar = () => {
               Intandem Scholars
             </h1>
             <p className="text-[13px] sm:text-[15px] text-[#03C300]">
-             "From Admission to Arrival Together"
+             "From Admission to Arrival-Together"
             </p>
           </div>
         </div>
