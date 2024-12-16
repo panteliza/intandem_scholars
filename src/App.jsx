@@ -12,6 +12,10 @@ import UKPage from './pages/UkPage';
 import About from './pages/About';
 import VisaApplicationPage from './pages/VisaApplicationPage';
 import AdmissionsPage from './pages/AdmissionsPage';
+import CareerCounsellingPage from './pages/CareerCounsellingPage';
+import AcademicGuidancePage from './pages/AcademicGuidancePage';
+import PreDepartureBriefingPage from './pages/PreDepartureBriefingPage';
+import VisaLodgementPage from './pages/VisaLodgementPage';
 
 
 
@@ -34,6 +38,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/visa-preparation" element={<VisaApplicationPage />} />
           <Route path="/college-admissions" element={<AdmissionsPage />} />
+          <Route path="/career-counselling" element={<CareerCounsellingPage />} />
+          <Route path="/academic-guidance" element={<AcademicGuidancePage />} />
+          <Route path="/pre-departure" element={<PreDepartureBriefingPage />} />
+          <Route path="/visa-lodgement" element={<VisaLodgementPage />} />
         </Routes>
 
         {/* WhatsApp button as an image */}
