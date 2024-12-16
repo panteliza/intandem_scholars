@@ -10,17 +10,17 @@ const AcademicGuidancePage = () => {
   }, []);
 
   return (
-    <div className="w-full flex-shrink-0 overflow-hidden">
+    <div className="w-full flex-shrink-0 overflow-hidden bg-gradient-to-b from-blue-50 to-gray-50 animate-pageFadeIn">
       {/* Navbar */}
-      <Navbar />
+      <Navbar className="animate-slideDown" />
 
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-72"
+        className="relative bg-cover bg-center h-72 animate-fadeInSlideUp"
         style={{ backgroundImage: `url(${AcademicImage})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-4xl text-white font-bold animate-slideDown">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center animate-fadeIn">
+          <h1 className="text-5xl text-white font-extrabold animate-bounceIn">
             Academic Guidance and Support
           </h1>
         </div>
@@ -30,17 +30,17 @@ const AcademicGuidancePage = () => {
       <div className="py-12 px-4 md:px-8 bg-gray-50 animate-fadeIn">
         <div className="max-w-6xl mx-auto">
           {/* Intro Section */}
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center animate-zoomIn">
             Your Pathway to Academic Success
           </h2>
-          <p className="text-lg text-gray-700 mb-8 text-center">
+          <p className="text-lg text-gray-700 mb-8 text-center animate-slideUpFadeIn">
             Get comprehensive guidance on studying abroad, securing scholarships,
             and finding suitable accommodations to make your academic journey smooth and successful.
           </p>
 
           {/* Accommodation Guidance */}
-          <div className="space-y-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="space-y-8 animate-slideUpFadeInDelayed">
+            <div className="bg-white p-6 rounded-lg shadow-md animate-slideUp">
               <h3 className="text-2xl font-semibold text-blue-700 mb-4">
                 1. Student Accommodation Options
               </h3>
@@ -67,7 +67,7 @@ const AcademicGuidancePage = () => {
             </div>
 
             {/* Scholarship Assistance */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md animate-fadeInSlideUp">
               <h3 className="text-2xl font-semibold text-blue-700 mb-4">
                 2. Scholarship Assistance
               </h3>
@@ -87,7 +87,7 @@ const AcademicGuidancePage = () => {
             </div>
 
             {/* Factors to Consider for Study Abroad */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md animate-slideUpFadeIn">
               <h3 className="text-2xl font-semibold text-blue-700 mb-4">
                 3. Key Factors for Study Abroad Success
               </h3>
@@ -108,7 +108,7 @@ const AcademicGuidancePage = () => {
             </div>
 
             {/* Support Services */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md animate-slideUpFadeInDelayed">
               <h3 className="text-2xl font-semibold text-blue-700 mb-4">
                 4. Comprehensive Support Services
               </h3>
@@ -121,10 +121,19 @@ const AcademicGuidancePage = () => {
       </div>
 
       {/* Footer */}
-      <Footer />
+      <Footer className="animate-fadeIn" />
 
       {/* Animations */}
       <style>{`
+        @keyframes pageFadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
         @keyframes slideDown {
           from {
             opacity: 0;
@@ -145,12 +154,91 @@ const AcademicGuidancePage = () => {
           }
         }
 
+        @keyframes zoomIn {
+          from {
+            transform: scale(0.8);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slideUpFadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeInSlideUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes slideUpFadeInDelayed {
+          0% {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-pageFadeIn {
+          animation: pageFadeIn 1.5s ease-in-out;
+        }
+
         .animate-slideDown {
-          animation: slideDown 1.2s ease-out;
+          animation: slideDown 1s ease-out;
         }
 
         .animate-fadeIn {
           animation: fadeIn 1.2s ease-in;
+        }
+
+        .animate-zoomIn {
+          animation: zoomIn 1.2s ease-out;
+        }
+
+        .animate-fadeInSlideUp {
+          animation: fadeInSlideUp 1.5s ease-in-out;
+        }
+
+        .animate-slideUp {
+          animation: slideUp 1s ease-out;
+        }
+
+        .animate-slideUpFadeIn {
+          animation: slideUpFadeIn 1.5s ease-out;
+        }
+
+        .animate-slideUpFadeInDelayed {
+          animation: slideUpFadeInDelayed 2s ease-out;
         }
       `}</style>
     </div>

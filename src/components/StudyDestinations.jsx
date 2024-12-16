@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // Import React Router Link
 import australiaImage from "../assets/aus.jpg";
 import canadaImage from "../assets/canada1.jpg";
 import usaImage from "../assets/usa.jpg";
@@ -12,6 +13,7 @@ const StudyDestinations = () => {
   const [visibleCards, setVisibleCards] = useState([]);
 
   useEffect(() => {
+    // Intersection Observer for animations
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -29,6 +31,7 @@ const StudyDestinations = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Study destinations data
   const destinations = [
     {
       image: australiaImage,
@@ -66,6 +69,7 @@ const StudyDestinations = () => {
 
   return (
     <div className="bg-gray-100 py-16 px-4">
+      {/* Page Title */}
       <div className="text-center mb-10">
         <h2
           className="text-3xl font-bold text-gray-800"
@@ -75,6 +79,8 @@ const StudyDestinations = () => {
         </h2>
         <p className="text-gray-600 mt-2">Choose your study destination</p>
       </div>
+
+      {/* Cards Section */}
       <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
         {destinations.map((destination, index) => (
           <div
@@ -99,6 +105,7 @@ const StudyDestinations = () => {
                 />
               </div>
             </div>
+
             {/* Hover Overlay */}
             <div
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-center bg-cover flex flex-col justify-center items-center text-white p-4"
@@ -109,24 +116,24 @@ const StudyDestinations = () => {
               }}
             >
               <h3 className="text-xl font-bold">{destination.title}</h3>
-              <a
-                href={destination.link}
+              <Link
+                to={destination.link}
                 className="mt-4 px-4 py-2 bg-white text-blue-500 font-semibold rounded-full shadow-md hover:bg-gray-200"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
+
             {/* Content Section */}
             <div className="p-6 text-center">
               <h3 className="text-xl font-bold text-gray-800">{destination.title}</h3>
               <p className="text-gray-600 mt-2">{destination.description}</p>
-              
             </div>
           </div>
         ))}
       </div>
 
-      {/* Inline CSS for Enhanced Animations */}
+      {/* Inline CSS for Animations */}
       <style>
         {`
           @keyframes slideInDown {
