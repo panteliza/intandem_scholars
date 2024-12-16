@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-16 px-4">
+    <div className="bg-white py-16 px-4">
       <div className="text-center mb-10">
         <h2
           className="text-4xl font-extrabold text-gray-800 animate-bounceIn"
@@ -58,14 +58,14 @@ const WhyChooseUs = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto">
+      <div className="grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto ">
         {whyChooseUsData.map((item, index) => (
           <div
             key={index}
             className="why-choose-us-card bg-white rounded-lg shadow-2xl p-6 flex flex-col items-center text-center transform opacity-0 transition-all duration-700 hover:scale-105 hover:rotate-2 hover:shadow-2xl"
           >
             {/* Icon */}
-            <div className="icon-container relative w-16 h-16 mb-4 animate-pulse hover:animate-spin">
+            <div className="icon-container relative w-16 h-16 mb-4 animate-pulse hover:animate-spin ">
               <img
                 src={item.icon}
                 alt={item.title}
