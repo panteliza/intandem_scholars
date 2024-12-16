@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import VisaImage from "../assets/qqq.jpg"; // Replace with correct path
 
 const VisaApplicationPage = () => {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full flex-shrink-0 overflow-hidden">
       {/* Navbar */}
