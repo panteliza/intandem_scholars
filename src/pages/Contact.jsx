@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import ContactForm from '../components/Contact';
 import aawazlocation from '../assets/map.png';
+import Footer from '../components/Footer';
 
 const mapImageUrl =
   'https://www.google.com/maps/place/Intandem+Scholars/@27.7020502,85.340598,17z/data=!4m6!3m5!1s0x39eb193ca8412ca1:0xbc5eaf962c8bfd62!8m2!3d27.7020787!4d85.3406429!16s%2Fg%2F11wm_t1qyg?entry=ttu&g_ep=EgoyMDI0';
@@ -109,6 +110,7 @@ const Contact = () => {
           }
         }
       `}</style>
+      <Footer/>
     </div>
   );
 };

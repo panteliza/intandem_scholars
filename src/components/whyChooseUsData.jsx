@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeIn");
+            entry.target.classList.add("animate-fadeInScale");
           }
         });
       },
@@ -50,27 +50,30 @@ const WhyChooseUs = () => {
     <div className="bg-gray-100 py-16 px-4">
       <div className="text-center mb-10">
         <h2
-          className="text-3xl font-bold text-gray-800"
-          style={{ animation: "slideInDown 1.5s ease-out" }}
+          className="text-4xl font-extrabold text-gray-800 animate-bounceIn"
         >
           WHY CHOOSE US
         </h2>
-        <div className="h-1 w-16 bg-red-500 mx-auto mt-2"></div>
+        <div className="h-1 w-16 bg-red-500 mx-auto mt-3 animate-expand"></div>
       </div>
+
+      {/* Cards Section */}
       <div className="grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto">
         {whyChooseUsData.map((item, index) => (
           <div
             key={index}
-            className="why-choose-us-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform hover:-translate-y-2 hover:shadow-xl opacity-0"
+            className="why-choose-us-card bg-white rounded-lg shadow-2xl p-6 flex flex-col items-center text-center transform opacity-0 transition-all duration-700 hover:scale-105 hover:rotate-2 hover:shadow-2xl"
           >
-            <div className="icon-container relative w-16 h-16 mb-4">
+            {/* Icon */}
+            <div className="icon-container relative w-16 h-16 mb-4 animate-pulse hover:animate-spin">
               <img
                 src={item.icon}
                 alt={item.title}
-                className="w-full h-full object-contain spin-on-hover"
+                className="w-full h-full object-contain"
               />
             </div>
-            <h3 className="text-sm md:text-lg font-semibold text-gray-800">
+            {/* Title */}
+            <h3 className="text-sm md:text-lg font-bold text-gray-800">
               {item.title}
             </h3>
           </div>
@@ -80,52 +83,93 @@ const WhyChooseUs = () => {
       {/* Animations */}
       <style>
         {`
-          @keyframes fadeIn {
+          /* Fade-In Scale Animation */
+          @keyframes fadeInScale {
             from {
               opacity: 0;
-              transform: translateY(20px);
+              transform: scale(0.7) translateY(30px);
             }
             to {
               opacity: 1;
-              transform: translateY(0);
+              transform: scale(1) translateY(0);
             }
           }
 
-          @keyframes slideInDown {
-            from {
+          /* Bounce In Animation */
+          @keyframes bounceIn {
+            0% {
+              transform: scale(0.3);
               opacity: 0;
-              transform: translateY(-50px);
             }
-            to {
+            50% {
+              transform: scale(1.05);
               opacity: 1;
-              transform: translateY(0);
+            }
+            70% {
+              transform: scale(0.95);
+            }
+            100% {
+              transform: scale(1);
             }
           }
 
-          @keyframes spin {
-            from {
-              transform: rotate(0deg);
+          /* Expand Line Animation */
+          @keyframes expand {
+            0% {
+              width: 0;
             }
-            to {
-              transform: rotate(360deg);
+            100% {
+              width: 4rem;
             }
           }
 
-          .animate-fadeIn {
-            animation: fadeIn 1s ease-out forwards;
+          /* Pulse Animation */
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.1);
+            }
+            100% {
+              transform: scale(1);
+            }
           }
 
+          .animate-fadeInScale {
+            animation: fadeInScale 1s ease-out forwards;
+          }
+
+          .animate-bounceIn {
+            animation: bounceIn 1.2s ease-out forwards;
+          }
+
+          .animate-expand {
+            animation: expand 1s ease-out forwards;
+          }
+
+          /* Card Hover and Spin Effects */
           .why-choose-us-card {
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
           }
 
           .why-choose-us-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px) rotate(2deg) scale(1.05);
           }
 
-          .spin-on-hover:hover {
+          .animate-pulse {
+            animation: pulse 1.5s infinite ease-in-out;
+          }
+
+          .hover\\:animate-spin:hover {
             animation: spin 1s linear infinite;
+          }
+
+          @media (max-width: 768px) {
+            .why-choose-us-card {
+              transform: none;
+            }
           }
         `}
       </style>

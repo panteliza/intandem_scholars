@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import aawazLogo from '../assets/logo1.png';
+import aawazLogo from '../assets/logo2.png';
 import facebookImg from '../assets/facebook.png';
 import googleImg from '../assets/googlemap.png';
 import whatsappImg from '../assets/whatsapp.png';
-import footerbgimage from '../assets/bgimage.jpeg';
+import footerbgimage from '../assets/ttt.jpg';
 import { Link } from 'react-router-dom';
 import { HiOutlineMail } from 'react-icons/hi';
 import { MdLocationOn } from 'react-icons/md';
@@ -61,12 +61,12 @@ const Footer = () => {
           animationPlayState: 'paused',
         }}
       >
-        <div className="flex flex-col items-center gap-3 sm:gap-5">
+        <div className="flex flex-col items-center gap-2 sm:gap-3 ">
           <Link to="/">
             <img
               src={aawazLogo}
               alt="Aawaz Logo"
-              className="h-[200px] w-[240px] rounded-full transition-transform duration-700 ease-in-out hover:scale-110 "
+              className="h-[250px] w-[240px] rounded-full transition-transform duration-700 ease-in-out hover:scale-110 "
             />
           </Link>
           <div className="flex gap-1 sm:gap-3">
@@ -100,7 +100,7 @@ const Footer = () => {
         <NavSection title="Quick Links" items={navItems1} />
 
         <div className="flex flex-col items-center font-semibold text-[16px] sm:text-[18px] gap-2 sm:gap-3">
-          <div className="font-bold text-[18px] sm:text-[20px] text-white text-center">
+          <div className="font-bold text-[18px] sm:text-[20px] text-gray-600 hover:text-gray-500 text-center">
             Intandem Scholars
           </div>
           {contactItems.map((item, index) => (
@@ -108,7 +108,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="text-center py-3 font-semibold text-white bg-red-600 w-full">
+      <div className="text-center py-3 font-semibold text-gray-800 bg-[#1FD1D7] w-full">
   <span className="glitter-effect">
     &copy; 2024 <span className="glitter-effect-text">Intandem Scholars</span> , Developed & Design by  
     {' '}
@@ -175,14 +175,14 @@ const NavSection = ({ title, items }) => (
 
 const NavItem = ({ link, label }) => (
   <div className="flex gap-2 items-center">
-    <Link to={link} className="text-white hover:text-gray-300 transition-colors duration-300">
+    <Link to={link} className="text-gray-700 hover:text-gray-500 transition-colors duration-300">
       {label}
     </Link>
   </div>
 );
 
 const ContactItem = ({ icon, link, label }) => (
-  <div className="flex gap-2 items-center text-white hover:text-gray-300 transition-colors duration-300">
+  <div className="flex gap-2 items-center text-gray-700 hover:text-gray-500 transition-colors duration-300">
     {icon}
     {link ? <a href={link}>{label}</a> : <span>{label}</span>}
   </div>
