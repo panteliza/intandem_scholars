@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   const contactItems = [
-    { icon: <BsTelephoneFill />, link: "tel: +977 9705566983", label: " 977 9705566983" },
+    { icon: <BsTelephoneFill />, link: "tel: +977 9705566983", label: "977 9705566983" },
     { icon: <HiOutlineMail />, link: "mailto:supadhyay@intandemscholars.com", label: "supadhyay@intandemscholars.com" },
     { icon: <MdLocationOn />, label: "Battisputali Marg, Old Baneshwor, Kathmandu" },
   ];
@@ -47,60 +47,51 @@ const Footer = () => {
         backgroundImage: `url(${footerbgimage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        position: 'relative',
       }}
     >
       {/* Darker red overlay */}
-      <div className="absolute inset-0  opacity-50 z-0"></div>
+    
 
       <div
         ref={footerRef}
-        className="flex flex-col gap-4 py-6 px-4 sm:px-7 md:flex-row justify-center items-center md:gap-8 lg:gap-12 xl:gap-16 relative z-10"
+        className="flex flex-col gap-2 py-4 px-4 sm:px-7 md:flex-row justify-center items-center md:gap-4 lg:gap-8 relative z-10"
         style={{
           animation: 'fadeIn 1s ease forwards',
           animationPlayState: 'paused',
         }}
       >
-        <div className="flex flex-col items-center gap-2 sm:gap-3 ">
-          <Link to="/">
-            <img
-              src={aawazLogo}
-              alt="Aawaz Logo"
-              className="h-[250px] w-[240px] rounded-full transition-transform duration-700 ease-in-out hover:scale-110 "
-            />
-          </Link>
-          <div className="flex gap-1 sm:gap-3">
-            <a
-              href="https://www.facebook.com/share/1A6FSDCwy8/?mibextid=LQQJ4d"
-              className="transition-transform duration-500 transform hover:scale-110"
-            >
-              <img src={facebookImg} alt="Facebook" className="w-8 h-8" />
-            </a>
-            <a
-              href="https://www.google.com/maps/dir//Intandem+Scholars,+Battisputali+Marg,+Kathmandu+44600/@27.7020787,85.3406429,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39eb193ca8412ca1:0xbc5eaf962c8bfd62!2m2!1d85.3406835!2d27.7020624?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-              className="transition-transform duration-500 transform hover:scale-110"
-            >
-              <img src={googleImg} alt="Google" className="w-8 h-8" />
-            </a>
-            <a
-              href="https://wa.me/9705566983"
-              className="transition-transform duration-500 transform hover:scale-110"
-            >
-              <img src={whatsappImg} alt="WhatsApp" className="w-8 h-8" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/intandemscholars/?originalSubdomain=np"
-              className="transition-transform duration-500 transform hover:scale-110"
-            >
-              <img src={img4} alt="Linkedin" className="w-8 h-8" />
-            </a>
-          </div>
-        </div>
+        {/* Logo Section */}
+        <div className="flex flex-col items-center">
+  <Link to="/">
+    <img
+      src={aawazLogo}
+      alt="Aawaz Logo"
+      className="h-[200px] w-[300px] transition-transform duration-700 ease-in-out hover:scale-110 mb-1"
+    />
+  </Link>
+  <div className="flex gap-1 mt-0">
+    <a href="https://www.facebook.com/share/1A6FSDCwy8/?mibextid=LQQJ4d" className="hover:scale-110 transform transition-transform duration-300">
+      <img src={facebookImg} alt="Facebook" className="w-8 h-8" />
+    </a>
+    <a href="https://www.google.com/maps/dir//Intandem+Scholars,+Battisputali+Marg,+Kathmandu+44600/@27.7020787,85.3406429,17z" className="hover:scale-110 transform transition-transform duration-300">
+      <img src={googleImg} alt="Google" className="w-8 h-8" />
+    </a>
+    <a href="https://wa.me/9705566983" className="hover:scale-110 transform transition-transform duration-300">
+      <img src={whatsappImg} alt="WhatsApp" className="w-8 h-8" />
+    </a>
+    <a href="https://www.linkedin.com/company/intandemscholars/?originalSubdomain=np"
+    target="_blank" className="hover:scale-110 transform transition-transform duration-300">
+      <img src={img4} alt="Linkedin" className="w-8 h-8" />
+    </a>
+  </div>
+</div>
 
+        {/* Quick Links */}
         <NavSection title="Quick Links" items={navItems1} />
 
-        <div className="flex flex-col items-center font-semibold text-[16px] sm:text-[18px] gap-2 sm:gap-3">
-          <div className="font-bold text-[18px] sm:text-[20px] text-gray-600 hover:text-gray-500 text-center">
+        {/* Contact Info */}
+        <div className="flex flex-col items-center font-semibold text-[16px] gap-2">
+          <div className="font-bold text-[18px] sm:text-[20px] text-gray-800 hover:text-gray-500 text-center">
             Intandem Scholars
           </div>
           {contactItems.map((item, index) => (
@@ -108,65 +99,29 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="text-center py-3 font-semibold text-gray-800 bg-[#1FD1D7] w-full">
-  <span className="glitter-effect">
-    &copy; 2024 <span className="glitter-effect-text">Intandem Scholars</span> , Developed & Design by  
-    {' '}
-    <a 
-      href="https://www.cloudsnepalweb.com/" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="glitter-effect-text"
-    >
-      Clouds Nepal Web Pvt. Ltd.
-    </a>
-  </span>
-</div>
 
+      {/* Footer Bottom */}
+      <div className="text-center py-2 font-semibold text-gray-800 bg-[#1FD1D7]">
+        <span>&copy; 2024 Intandem Scholars, Developed & Design by{" "}
+          <a href="https://www.cloudsnepalweb.com/" target="_blank" rel="noopener noreferrer">
+            Clouds Nepal Web Pvt. Ltd.
+          </a>
+        </span>
+      </div>
 
-      {/* Inline CSS for custom animations */}
+      {/* Inline CSS for Custom Animations */}
       <style>{`
         @keyframes fadeIn {
-          0% { opacity: 0; transform: translateY(40px); }
+          0% { opacity: 0; transform: translateY(30px); }
           100% { opacity: 1; transform: translateY(0); }
         }
-           .glitter-effect-text {
-    position: relative;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-image: linear-gradient(90deg, #e5e5e5, #f0f0f0, #e5e5e5);
-    background-size: 200% 100%;
-    animation: glitter 1.5s infinite linear;
-    -webkit-background-clip: text; /* Ensure gradient only applies to text */
-    background-clip: text;
-  }
-
-  /* Create the glittering animation */
-  @keyframes glitter {
-    0% {
-      background-position: 200% 0;
-    }
-    50% {
-      background-position: -200% 0;
-    }
-    100% {
-      background-position: 200% 0;
-    }
-  }
-
-  /* Optional: Soft white glow for moon-like shine */
-  .glitter-effect-text {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.3);
-  }
       `}</style>
     </div>
   );
 };
 
-const NavSection = ({ title, items }) => (
-  <div className="flex flex-col items-center font-semibold text-[16px] sm:text-[18px] gap-2 sm:gap-5">
+const NavSection = ({ items }) => (
+  <div className="flex flex-col items-center font-semibold text-[16px] gap-2">
     {items.map((item, index) => (
       <NavItem key={index} link={item.link} label={item.label} />
     ))}
@@ -182,7 +137,7 @@ const NavItem = ({ link, label }) => (
 );
 
 const ContactItem = ({ icon, link, label }) => (
-  <div className="flex gap-2 items-center text-gray-700 hover:text-gray-500 transition-colors duration-300">
+  <div className="flex gap-2 items-center text-gray-800 hover:text-gray-500 transition-colors duration-300">
     {icon}
     {link ? <a href={link}>{label}</a> : <span>{label}</span>}
   </div>
