@@ -38,24 +38,18 @@ const AboutIntandem = () => {
               Welcome to Intandem Scholars
             </h2>
             <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal ">
-              At Intandem Scholars, we pride ourselves on providing expert
-              education consultancy services to aspiring students. Based in the
-              heart of Kathmandu, Nepal, our mission is to guide and empower
-              students in achieving their academic and career goals by offering
-              personalized and professional support.
+              
+Welcome to InTandem Scholars, a leading education consultancy in Nepal. Based in Kathmandu, we specialize in guiding students through the journey of studying abroad. Our expert consultants provide personalized support in university selection, course guidance, scholarship assistance, admissions counseling, and visa processing.
+
+At InTandem Scholars, we are committed to helping you achieve your academic and career aspirations. Whether you aim to study in Australia, Canada, the USA, the UK, South Korea, or Europe, we are here to make your dreams a reality.
+
+
             </p>
             <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal delay-500">
-              With years of experience, we’ve helped countless students find the
-              perfect universities and courses, simplifying the application
-              process while ensuring their transition abroad is seamless. Our
-              expert team provides tailored advice, from visa assistance to
-              academic counseling, creating a supportive environment for
-              success.
+             
             </p>
             <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal delay-700">
-              Join us at Intandem Scholars, where your dreams meet our expertise,
-              and together, we pave the path to a brighter and more fulfilling
-              future.
+            What sets us apart is our dedication to understanding your unique goals and aspirations, ensuring tailored solutions at every step. With a proven track record of success, a strong network of global institutions, and unwavering support, we strive to simplify the complexities of studying abroad, so you can focus on your future. Join us and embark on your path to a brighter future.
             </p>
           </div>
         </div>

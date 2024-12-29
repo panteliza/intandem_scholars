@@ -35,10 +35,20 @@ const USAPage = () => {
       <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Why Study in the USA?</h2>
-          <p className="text-lg ">
-            The USA offers world-class universities, a dynamic campus environment, and extensive opportunities for research and internships.
+          <p className="text-lg text-justify ">
+          The USA is home to some of the world's most prestigious universities and offers a diverse range of programs and research opportunities. For Nepalese students, studying in the USA means access to cutting-edge technology, innovative teaching methods, and a multicultural environment that fosters personal and professional growth. The USA's flexible education system allows students to explore various fields of study and tailor their education to their interests and career goals. Additionally, the USA offers numerous scholarships and financial aid options specifically for international students, making it a top choice for higher education.
           </p>
         </div>
+    
+      </section>
+      <section className="bg-gray-50 py-16 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Post-Education Opportunities</h2>
+          <p className="text-lg text-justify ">
+          After completing your education, you can apply for a Post-Completion Optional Practical Training (OPT) visa, allowing you to work in the USA for up to 12 months (or 24 months for STEM graduates). This experience can lead to sponsorship for an H-1B visa and eventually a Green Card, granting you permanent residency. With a Green Card, you can enjoy a high standard of living, excellent healthcare, and financial freedom. The USA offers a secure environment with numerous career opportunities and the potential for high earnings.
+          </p>
+        </div>
+    
       </section>
 
       {/* Facts About the USA */}
