@@ -20,10 +20,10 @@ const MessageFromDirector = () => {
 
         {/* Right Section - Text */}
         <div className="w-full md:w-1/2 p-8 space-y-6">
-          <h2 className=" sm:text-xl lg:text-3xl font-semibold text-white animate-fadeIn delay-300">
+          <h2 className=" sm:text-3xl lg:text-3xl font-semibold text-white animate-fadeIn delay-300">
             Message From The Managing Director
           </h2>
-          <p className=" sm:text-xl lg:text-3xl leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal">
+          <p className=" sm:text-3xl lg:text-3xl leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal">
             Welcome to <span className="font-semibold text-indigo-600">InTandem Scholars</span>!
           </p>
           <p className="sm:text-2xl lg:text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal delay-500">
