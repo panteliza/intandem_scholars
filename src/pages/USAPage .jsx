@@ -32,7 +32,7 @@ const USAPage = () => {
       </section>
 
       {/* Why Study in the USA */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Why Study in the USA?</h2>
           <p className="text-lg text-justify ">
@@ -41,7 +41,7 @@ const USAPage = () => {
         </div>
     
       </section>
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-10 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Post-Education Opportunities</h2>
           <p className="text-lg text-justify ">
@@ -52,7 +52,7 @@ const USAPage = () => {
       </section>
 
       {/* Facts About the USA */}
-      <section className="bg-white py-16 px-6">
+      <section className="bg-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Facts About the USA</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -82,7 +82,7 @@ const USAPage = () => {
       </section>
 
       {/* Reasons to Study in the USA */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Reasons to Study in the USA</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
