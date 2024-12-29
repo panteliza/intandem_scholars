@@ -3,14 +3,14 @@ import DirectorPhoto from "../assets/md.jpeg";
 
 const MessageFromDirector = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center px-5 sm:px-10 md:px-20 py-10 pt-[10px] animate-fadeIn">
+    <div className="min-h-screen flex flex-col items-center px-5 sm:px-10 md:px-20 py-10 pt-[15px] animate-fadeIn">
       <div className="max-w-7xl w-full flex flex-col md:flex-row bg-gray-800 shadow-lg rounded-lg overflow-hidden animate-zoomIn">
         {/* Left Section - Image */}
         <div className="w-full md:w-1/2 group relative">
           <img
             src={DirectorPhoto}
             alt="Shailendra Upadhyay"
-            className="w-full h-[300px] md:h-auto object-cover transition-transform transform hover:scale-105 duration-500"
+            className="w-full h-[250px] md:h-auto object-cover transition-transform transform hover:scale-105 duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
           <p className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -50,6 +50,101 @@ const MessageFromDirector = () => {
           </div>
         </div>
       </div>
+      <style>{`
+        /* Fade-in effect */
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        /* Slide-down effect */
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Zoom-in effect */
+        @keyframes zoomIn {
+          from {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        /* Gradient shimmer effect */
+        @keyframes gradientCycle {
+          0% {
+            background-position: 0% 50%;
+          }
+          25% {
+            background-position: 50% 0%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          75% {
+            background-position: 50% 100%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        /* Gradient reveal animation */
+        @keyframes gradientReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(20px) rotateX(90deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) rotateX(0deg);
+          }
+        }
+
+        /* Classes */
+        .animate-fadeIn {
+          animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .animate-slideDown {
+          animation: slideDown 1.5s ease-out forwards;
+        }
+
+        .animate-zoomIn {
+          animation: zoomIn 1.5s ease-out forwards;
+        }
+
+        .animate-gradientReveal {
+          animation: gradientReveal 1.2s ease-in-out forwards;
+          display: inline-block;
+          transform-origin: bottom;
+          background-size: 400% 400%;
+          animation: gradientCycle 6s ease infinite;
+        }
+
+        .animate-gradientReveal.delay-500 {
+          animation-delay: 0.5s;
+        }
+
+        .animate-gradientReveal.delay-700 {
+          animation-delay: 0.7s;
+        }
+      `}</style>
     </div>
   );
 };
