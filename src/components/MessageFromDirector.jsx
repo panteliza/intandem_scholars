@@ -40,7 +40,7 @@ const MessageFromDirector = () => {
             <p className="text-lg font-medium text-gray-800">Shailendra Upadhyay</p>
             <p className="text-sm text-gray-500">Managing Director, InTandem Scholars</p>
             <a
-              href="https://www.linkedin.com/in/shailendra-upadhyay"
+              href="https://www.linkedin.com/in/shailendra-k-u?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-3 text-indigo-600 font-medium hover:underline"

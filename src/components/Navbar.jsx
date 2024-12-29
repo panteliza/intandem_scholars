@@ -193,7 +193,7 @@ const Navbar = () => {
     <img src={img2} alt="Google Maps" className="h-[40px] w-[40px] object-contain" />
   </a>
   <a
-    href="https://wa.me/9705566983"
+    href="https://wa.me/9801025694"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:scale-110 transform transition-transform duration-300"
@@ -284,7 +284,7 @@ const Navbar = () => {
     <img src={img2} alt="Google Maps" className="h-[40px] w-[40px] object-contain" />
   </a>
   <a
-    href="https://wa.me/9705566983"
+    href="https://wa.me/9801025694"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:scale-110 transform transition-transform duration-300"

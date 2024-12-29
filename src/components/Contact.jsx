@@ -70,10 +70,10 @@ const Contact = () => {
             Our Contact
           </h3>
           <a href="tel:+97714534655" className="text-center text-gray-700 hover:text-blue-500">
-            +977 1 4534655
+             +977 1 4534655
           </a>
-          <a href="tel:+9779705566983" className="text-center text-gray-700 hover:text-blue-500">
-            +977 9705566983
+          <a href="tel:+9779801025694" className="text-center text-gray-700 hover:text-blue-500">
+            +977 9801025694
           </a>
         </div>
 
@@ -91,10 +91,10 @@ const Contact = () => {
             Mail Us
           </h3>
           <a
-            href="mailto:supadhyay@intandemscholars.com"
+            href="mailto:intandemscholars@gmail.com"
             className="text-center text-gray-700 hover:text-blue-500"
           >
-            supadhyay@intandemscholars.com
+           intandemscholars@gmail.com
           </a>
         </div>
       </div>

@@ -76,7 +76,7 @@ const Footer = () => {
     <a href="https://www.google.com/maps/dir//Intandem+Scholars,+Battisputali+Marg,+Kathmandu+44600/@27.7020787,85.3406429,17z" className="hover:scale-110 transform transition-transform duration-300">
       <img src={googleImg} alt="Google" className="w-8 h-8" />
     </a>
-    <a href="https://wa.me/9705566983" className="hover:scale-110 transform transition-transform duration-300">
+    <a href="https://wa.me/9801025694" className="hover:scale-110 transform transition-transform duration-300">
       <img src={whatsappImg} alt="WhatsApp" className="w-8 h-8" />
     </a>
     <a href="https://www.linkedin.com/company/intandemscholars/?originalSubdomain=np"
@@ -102,7 +102,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center py-2 font-semibold text-gray-800 bg-[#1FD1D7]">
-        <span>&copy; 2024 Intandem Scholars, Developed & Design by{" "}
+        <span>&copy; 2025 Intandem Scholars, Developed & Design by{" "}
           <a href="https://www.cloudsnepalweb.com/" target="_blank" rel="noopener noreferrer">
             Clouds Nepal Web Pvt. Ltd.
           </a>
