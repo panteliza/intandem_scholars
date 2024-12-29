@@ -8,6 +8,7 @@ import VisaConsultancySlider from '../components/VisaConsultancySlider';
 import Footer from '../components/Footer';
 import ServicesComponent from '../components/ServicesComponent ';
 import Reviews from '../components/Reviews';
+import MessageFromDirector from '../components/MessageFromDirector';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
         <VisaConsultancySlider/>
         <InfoCards/>
         <StudyDestinations/>
+<MessageFromDirector/>
         <ServicesComponent/>
         <WhyChooseUs/>
         <Contact />

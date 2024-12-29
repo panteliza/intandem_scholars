@@ -32,11 +32,19 @@ const UKPage = () => {
       </section>
 
       {/* Why Study in the UK */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Why Study in the UK?</h2>
-          <p className="text-lg text-gray-700">
-            The UK is known for its prestigious universities, diverse student community, and opportunities for personal and professional growth.
+          <p className="text-lg text-gray-700">        
+The UK boasts a rich academic heritage with universities that are globally recognized for their excellence. For Nepalese students, studying in the UK provides an opportunity to learn from world-class faculty and engage in research that can shape their future careers. The UK's education system emphasizes critical thinking, creativity, and independent learning, preparing students for success in a globalized world. Moreover, the UK offers a variety of scholarships and funding options to support international students.
+          </p>
+        </div>
+      </section>
+      <section className="bg-gray-50 py-8 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Why Study in the UK?</h2>
+          <p className="text-lg text-gray-700">        
+The UK boasts a rich academic heritage with universities that are globally recognized for their excellence. For Nepalese students, studying in the UK provides an opportunity to learn from world-class faculty and engage in research that can shape their future careers. The UK's education system emphasizes critical thinking, creativity, and independent learning, preparing students for success in a globalized world. Moreover, the UK offers a variety of scholarships and funding options to support international students.
           </p>
         </div>
       </section>
