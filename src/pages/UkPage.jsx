@@ -35,18 +35,21 @@ const UKPage = () => {
       <section className="bg-gray-50 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Why Study in the UK?</h2>
-          <p className="text-lg text-gray-700">        
-The UK boasts a rich academic heritage with universities that are globally recognized for their excellence. For Nepalese students, studying in the UK provides an opportunity to learn from world-class faculty and engage in research that can shape their future careers. The UK's education system emphasizes critical thinking, creativity, and independent learning, preparing students for success in a globalized world. Moreover, the UK offers a variety of scholarships and funding options to support international students.
+          <p className="text-lg text-justify ">
+          The UK boasts a rich academic heritage with universities that are globally recognized for their excellence. For Nepalese students, studying in the UK provides an opportunity to learn from world-class faculty and engage in research that can shape their future careers. The UK's education system emphasizes critical thinking, creativity, and independent learning, preparing students for success in a globalized world. Moreover, the UK offers a variety of scholarships and funding options to support international students. With its vibrant cultural scene and historic landmarks, the UK also provides an enriching student experience.
           </p>
         </div>
+    
       </section>
-      <section className="bg-gray-50 py-8 px-6">
+      <section className="bg-gray-50 py-10 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Why Study in the UK?</h2>
-          <p className="text-lg text-gray-700">        
-The UK boasts a rich academic heritage with universities that are globally recognized for their excellence. For Nepalese students, studying in the UK provides an opportunity to learn from world-class faculty and engage in research that can shape their future careers. The UK's education system emphasizes critical thinking, creativity, and independent learning, preparing students for success in a globalized world. Moreover, the UK offers a variety of scholarships and funding options to support international students.
+          <h2 className="text-3xl font-bold mb-8">Post-Education Opportunities</h2>
+          <p className="text-lg text-justify ">
+       
+Upon graduation, you can apply for a Graduate Route visa, allowing you to stay and work in the UK for up to two years (or three years for doctoral graduates). This can be a pathway to securing a Skilled Worker visa and eventually Indefinite Leave to Remain (ILR), leading to permanent residency. With ILR, you can enjoy a high quality of life, robust healthcare, and financial stability. The UK offers a safe and dynamic environment with diverse career opportunities and competitive salaries.
           </p>
         </div>
+    
       </section>
 
       {/* Facts About the UK */}
