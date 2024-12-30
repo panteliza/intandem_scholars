@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       
       {/* Main content section */}
-      <div className="w-full flex-shrink-0">
+      <div className="w-full flex-shrink-0 overflow-hidden">
         <VisaConsultancySlider/>
         <InfoCards/>
         <StudyDestinations/>
