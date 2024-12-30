@@ -6,24 +6,22 @@ const MessageFromDirector = () => {
     <div className="min-h-screen flex flex-col items-center px-5 sm:px-10 md:px-20 py-10 pt-[15px] animate-fadeIn">
       <div className="max-w-7xl w-full flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden animate-zoomIn">
         {/* Left Section - Image */}
-        <div className="w-full md:w-1/2 group relative">
-          <img
-            src={DirectorPhoto}
-            alt="Shailendra Upadhyay"
-            className="w-full h-[270px] md:h-auto object-cover transition-transform transform hover:scale-105 duration-500"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
-          <p className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            Shailendra Upadhyay: Empowering Nepalese Students
-          </p>
-        </div>
+        <div className="w-full md:w-1/4 flex items-center justify-center relative ">
+  <img
+    src={DirectorPhoto}
+    alt="Shailendra Upadhyay"
+    className=" md:w-50 md:h-50 object-cover rounded-full transition-transform transform hover:scale-105 duration-500"
+    onContextMenu={(e) => e.preventDefault()} // Prevent right-click
+  />
+</div>
+
 
         {/* Right Section - Text */}
-        <div className="w-full md:w-1/2 p-8 space-y-6">
-          <h2 className=" sm:text-3xl lg:text-3xl font-semibold text-gray-800animate-fadeIn delay-300">
+        <div className="w-full md:w-3/4 p-8 space-y-6">
+          <h2 className="sm:text-3xl lg:text-3xl font-semibold text-gray-800 animate-fadeIn delay-300">
             Message From The Managing Director
           </h2>
-          <p className=" sm:text-3xl lg:text-3xl leading-relaxed text-justify bg-gradient-to-r from-gray-500 to-gray-800 bg-clip-text text-transparent animate-gradientReveal">
+          <p className="sm:text-3xl lg:text-3xl leading-relaxed text-justify bg-gradient-to-r from-gray-500 to-gray-800 bg-clip-text text-transparent animate-gradientReveal">
             Welcome to <span className="font-semibold text-indigo-600">InTandem Scholars</span>!
           </p>
           <p className="sm:text-2xl lg:text-lg leading-relaxed text-justify bg-gradient-to-r from-gray-500 to-gray-800 bg-clip-text text-transparent animate-gradientReveal delay-500">
@@ -112,14 +110,6 @@ const MessageFromDirector = () => {
 
         .animate-gradientReveal {
           animation: gradientReveal 1.2s ease-in-out forwards;
-        }
-
-        .animate-gradientReveal.delay-500 {
-          animation-delay: 0.5s;
-        }
-
-        .animate-gradientReveal.delay-700 {
-          animation-delay: 0.7s;
         }
       `}</style>
     </div>

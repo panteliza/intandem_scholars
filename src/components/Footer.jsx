@@ -9,6 +9,8 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { MdLocationOn } from 'react-icons/md';
 import { BsTelephoneFill } from 'react-icons/bs';
 import img4 from '../assets/linkedin.png';
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+
 
 const Footer = () => {
   const navItems1 = [
@@ -18,7 +20,8 @@ const Footer = () => {
   ];
 
   const contactItems = [
-    { icon: <BsTelephoneFill />, link: "tel: +977  9801025694", label: "977 9801025694" },
+    { icon: <BsTelephoneFill />, link: "tel: +977 01-4534655", label: "01-4534655" },
+    { icon: <HiOutlineDevicePhoneMobile  />, link: "tel: +977  9801025694", label: "977 9801025694" },
     { icon: <HiOutlineMail />, link: "mailto:intandemscholars@gmail.com", label: "intandemscholars@gmail.com" },
     { icon: <MdLocationOn />, label: "Battisputali Marg, Purano Baneshwor, Kathmandu,Nepal" },
   ];
