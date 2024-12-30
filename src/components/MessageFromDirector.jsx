@@ -10,7 +10,7 @@ const MessageFromDirector = () => {
   <img
     src={DirectorPhoto}
     alt="Shailendra Upadhyay"
-    className=" md:w-50 md:h-50 object-cover rounded-full transition-transform transform hover:scale-105 duration-500"
+    className=" md:w-50 md:h-50 object-cover rounded-full transition-transform transform "
     onContextMenu={(e) => e.preventDefault()} // Prevent right-click
   />
 </div>
