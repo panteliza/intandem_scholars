@@ -18,9 +18,9 @@ const Footer = () => {
   ];
 
   const contactItems = [
-    { icon: <BsTelephoneFill />, link: "tel: +977 9705566983", label: "977 9705566983" },
-    { icon: <HiOutlineMail />, link: "mailto:supadhyay@intandemscholars.com", label: "supadhyay@intandemscholars.com" },
-    { icon: <MdLocationOn />, label: "Battisputali Marg, Old Baneshwor, Kathmandu" },
+    { icon: <BsTelephoneFill />, link: "tel: +977  9801025694", label: "977 9801025694" },
+    { icon: <HiOutlineMail />, link: "mailto:intandemscholars@gmail.com", label: "intandemscholars@gmail.com" },
+    { icon: <MdLocationOn />, label: "Battisputali Marg, Purano Baneshwor, Kathmandu,Nepal" },
   ];
 
   const footerRef = useRef(null);

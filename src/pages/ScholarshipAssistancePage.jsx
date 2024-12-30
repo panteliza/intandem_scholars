@@ -106,9 +106,9 @@ const ScholarshipAssistancePage = () => {
               </h3>
               <p className="text-gray-600">
                 Let us help you achieve your academic dreams. Contact us for personalized scholarship assistance and expert advice. Reach out to us at{" "}
-                <a href="mailto:info@scholarsassist.com" className="text-yellow-700 underline">
-                  info@scholarsassist.com
-                </a> or call us at (123-456-7890).
+                <a href="mailto:intandemscholars@gmail.com" className="text-yellow-700 underline">
+                intandemscholars@gmail.com
+                </a> or call us at (9801025694).
               </p>
             </div>
           </div>
