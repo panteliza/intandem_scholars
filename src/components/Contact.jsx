@@ -53,7 +53,7 @@ const Contact = () => {
           <h3 className="font-bold sm:text-[20px] text-[18px] text-gray-800 mb-2">
             Our Location
           </h3>
-          <p className="text-center text-gray-700">Battisputali Marg, Old Baneshwor, Kathmandu</p>
+          <p className="text-center text-gray-700">Battisputali Marg, Purano Baneshwor, Kathmandu, Nepal</p>
         </div>
 
         {/* Contact Box */}
