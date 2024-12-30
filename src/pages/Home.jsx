@@ -24,7 +24,7 @@ const Home = () => {
         <VisaConsultancySlider/>
         <InfoCards/>
         <StudyDestinations/>
-<MessageFromDirector/>
+{/* <MessageFromDirector/> */}
         <ServicesComponent/>
         <WhyChooseUs/>
         <Contact />
