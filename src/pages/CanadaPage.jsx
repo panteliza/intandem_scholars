@@ -32,13 +32,26 @@ const CanadaPage = () => {
       </section>
 
       {/* Why Study in Canada */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Why Study in Canada?</h2>
-          <p className="text-lg text-gray-700">
-            Canada is known for its high academic standards, multicultural environment, and opportunities for international students to gain work experience during and after their studies.
+          <h2 className="text-3xl font-bold mb-8">Why Study in the Canada?</h2>
+          <p className="text-lg text-justify ">
+          Canada is celebrated for its excellent education system and inclusive, multicultural society. For Nepalese students, studying in Canada offers access to top-ranked universities and a wide range of programs that emphasize research and practical experience. Canada's commitment to innovation and technology provides students with the skills needed to excel in their careers. The country's safe and welcoming environment, along with its numerous scholarships and financial aid options, makes it an attractive destination for international students.
+          
           </p>
         </div>
+    
+      </section>
+      <section className="bg-gray-50 py-10 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Post-Education Opportunities</h2>
+          <p className="text-lg text-justify ">
+       
+After graduation, you can apply for a Post-Graduation Work Permit (PGWP), allowing you to work in Canada for up to three years. This experience can lead to permanent residency through the Canadian Experience Class (CEC) or Provincial Nominee Program (PNP). As a permanent resident, you can enjoy a high quality of life, excellent healthcare, and financial stability. Canada offers a secure environment with diverse career opportunities and competitive salaries.
+
+          </p>
+        </div>
+    
       </section>
 
       {/* Facts About Canada */}

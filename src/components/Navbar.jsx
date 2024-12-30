@@ -12,12 +12,14 @@ import img3 from '../assets/whatsapp.png';
 import img4 from '../assets/linkedin.png';
 
 const services = [
-  { path: '/college-admissions', label: 'College & University Admissions' },
-  { path: '/visa-preparation', label: 'Visa Preparation' },
-  { path: '/career-counselling', label: 'Career Counselling' },
-  { path: '/academic-guidance', label: 'Academic Guidance' },
-  { path: '/pre-departure', label: 'Pre Departure Briefing' },
-  { path: '/visa-lodgement', label: 'Visa Lodgement' },
+  { path: "/services/university-selection", label: "University Selection" },
+  { path: "/services/course-guidance", label: "Course Guidance" },
+  { path: "/services/scholarship-assistance", label: "Scholarship Assistance" },
+  { path: "/services/admissions-counseling", label: "Admissions Counseling" },
+  { path: "/services/visa-processing", label: "Visa Processing" },
+  { path: "/services/academic-planning", label: "Academic Planning" },
+  { path: "/services/pre-departure-orientation", label: "Pre-Departure Orientation" },
+  { path: "/services/post-arrival-support", label: "Post-Arrival Support" },
 ];
 
 const abroad = [
@@ -25,6 +27,8 @@ const abroad = [
   { path: '/study-in-australia', label: 'Study In Australia' },
   { path: '/study-in-canada', label: 'Study In Canada' },
   { path: '/study-in-uk', label: 'Study In UK' },
+  { path: '/study-in-new-zealand', label: 'Study In NewZealand' },
+  { path: '/study-in-europe', label: 'Study In Europe' },
  
 ];
 

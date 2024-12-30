@@ -8,6 +8,12 @@ import australiaFlag from "../assets/australia-flag.png";
 import canadaFlag from "../assets/canada-flag.png";
 import usaFlag from "../assets/usa-flag.jpg";
 import ukFlag from "../assets/uk-flag.png";
+import newZealandFlag from "../assets/newzealand.png";
+import newZealandImage from "../assets/qq.jpg";
+import europeImage from "../assets/rr.jpeg";
+import europeFlag from "../assets/europe.png";
+
+
 
 const StudyDestinations = () => {
   const [visibleCards, setVisibleCards] = useState([]);
@@ -65,7 +71,24 @@ const StudyDestinations = () => {
         "Plenty of research facilities and even more opportunities to explore your career options in the UK.",
       link: "/study-in-uk",
     },
+    {
+      image: newZealandImage,
+      flag: newZealandFlag,
+      title: "Study in New Zealand",
+      description:
+        "Benefit from a world-class education system and an incredible quality of life while studying in New Zealand.",
+      link: "/study-in-new-zealand",
+    },
+    {
+      image: europeImage,
+      flag: europeFlag,
+      title: "Study in Europe",
+      description:
+        "Explore diverse cultures and world-renowned universities while studying in various European countries.",
+      link: "/study-in-europe",
+    },
   ];
+  
 
   return (
     <div className="bg-gray-100 py-16 px-4">

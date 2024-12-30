@@ -10,12 +10,17 @@ import USAPage from './pages/USAPage ';
 import CanadaPage from './pages/CanadaPage';
 import UKPage from './pages/UkPage';
 import About from './pages/About';
-import VisaApplicationPage from './pages/VisaApplicationPage';
-import AdmissionsPage from './pages/AdmissionsPage';
-import CareerCounsellingPage from './pages/CareerCounsellingPage';
-import AcademicGuidancePage from './pages/AcademicGuidancePage';
-import PreDepartureBriefingPage from './pages/PreDepartureBriefingPage';
-import VisaLodgementPage from './pages/VisaLodgementPage';
+
+import NewzealandPage from './pages/NewzealandPage';
+import EuropePage from './pages/EuropePage';
+import UniversitySelectionPage from './pages/UniversitySelection';
+import CourseGuidancePage from './pages/CourseGuidancePage';
+import ScholarshipAssistancePage from './pages/ScholarshipAssistancePage';
+import AdmissionsCounselingPage from './pages/AdmissionsCounselingPage';
+import PreDepartureOrientationPage from './pages/PreDepartureOrientationPage';
+import VisaProcessingPage from './pages/VisaProcessingPage';
+import AcademicPlanningPage from './pages/AcademicPlanningPage';
+import PostArrivalSupportPage from './pages/PostArrivalSupportPage';
 
 
 
@@ -34,14 +39,23 @@ const App = () => {
           <Route path="/study-in-usa" element={<USAPage />} />
           <Route path="/study-in-uk" element={<UKPage />} />
           <Route path="/study-in-australia" element={<AustraliaPage />} />
+          <Route path="/study-in-new-zealand" element={<NewzealandPage />} />
+          <Route path="/study-in-europe" element={<EuropePage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/visa-preparation" element={<VisaApplicationPage />} />
-          <Route path="/college-admissions" element={<AdmissionsPage />} />
-          <Route path="/career-counselling" element={<CareerCounsellingPage />} />
-          <Route path="/academic-guidance" element={<AcademicGuidancePage />} />
-          <Route path="/pre-departure" element={<PreDepartureBriefingPage />} />
-          <Route path="/visa-lodgement" element={<VisaLodgementPage />} />
+         
+          <Route path="/services/university-selection" element={<UniversitySelectionPage />} />
+         
+        
+          <Route path="/services/course-guidance" element={<CourseGuidancePage />} />
+          <Route path="/services/scholarship-assistance" element={<ScholarshipAssistancePage />} />
+          <Route path="/services/admissions-counseling" element={<AdmissionsCounselingPage />} />
+          <Route path="/services/visa-processing" element={<VisaProcessingPage />} />
+          <Route path="/services/academic-planning" element={<AcademicPlanningPage />} />
+          <Route path="/services/pre-departure-orientation" element={<PreDepartureOrientationPage />} />
+          <Route path="/services/post-arrival-support" element={<PostArrivalSupportPage />} />
+       
+        
         </Routes>
 
         {/* WhatsApp button as an image */}

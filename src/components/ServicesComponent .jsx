@@ -26,22 +26,21 @@ const ServicesSection = () => {
         {/* Text Section */}
         <div className="lg:w-1/2 fade-in opacity-0 transition-all duration-1000 ease-in-out">
           <h1 className="text-4xl font-bold text-gray-800 mb-6 animate-textSlideIn">
-            Commence with Your Goals
+            Unlock Your Future
           </h1>
           <p className="text-lg text-gray-600 mb-6 animate-fadeIn">
-            Intandem Scholars offers you the best education consultancy in Nepal.
+            Intandem Scholars provides expert education consultancy tailored to your success.
           </p>
           <ul className="space-y-4">
             {[
-              "Visa Consultation: Expert help with visa requirements.",
-              "Admissions Advice: Guidance for college/university admission.",
-              "Travel and Stay: Assistance with accommodation abroad.",
-              "College Admissions: Help choosing the best institution.",
-              "Visa Preparation: Step-by-step visa application guidance.",
-              "Career Counselling: Tailored career advice and planning.",
-              "Academic Guidance: Support for academic success strategies.",
-              "Pre-Departure Briefing: Smooth transition preparation abroad.",
-              "Visa Lodgement: Assistance with timely visa submission.",
+              "University Selection: Personalized guidance for choosing the best universities.",
+              "Course Guidance: Expert advice on selecting the right courses.",
+              "Scholarship Assistance: Support in identifying and applying for scholarships.",
+              "Admissions Counseling: Help with applications, documents, and interviews.",
+              "Visa Processing: Step-by-step guidance for a smooth visa application.",
+              "Academic Planning: Strategic planning for long-term success.",
+              "Pre-Departure Orientation: Tips to prepare for your academic journey abroad.",
+              "Post-Arrival Support: Assistance with settling into your new environment.",
             ].map((item, index) => (
               <li
                 key={index}

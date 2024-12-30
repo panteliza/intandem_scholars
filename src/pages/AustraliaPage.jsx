@@ -32,14 +32,25 @@ const AustraliaPage = () => {
       </section>
 
       {/* Why Study in Australia */}
-      <section className="bg-gray-50 py-16 px-6">
+      <section className="bg-gray-50 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Why Study in Australia from Nepal?</h2>
-          <p className="text-lg ">
-            Australia offers students a dynamic, multicultural experience, access to globally ranked
-            universities, and opportunities for professional and personal growth.
+          <h2 className="text-3xl font-bold mb-8">Why Study in the Australia?</h2>
+          <p className="text-lg text-justify ">
+         
+Australia is known for its high-quality education system and vibrant student life. For Nepalese students, studying in Australia means benefiting from a practical and hands-on approach to learning, which is highly valued by employers worldwide. Australia's universities are renowned for their research and teaching excellence, particularly in fields such as engineering, medicine, and environmental sciences. The country's welcoming and multicultural society makes it an ideal destination for international students. Additionally, Australia offers numerous scholarships and financial support options for Nepalese students.
           </p>
         </div>
+    
+      </section>
+      <section className="bg-gray-50 py-10 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Post-Education Opportunities</h2>
+          <p className="text-lg text-justify ">
+       
+          After completing your studies, you can apply for a Temporary Graduate visa (subclass 485), allowing you to work in Australia for up to four years. This can lead to a Skilled Independent visa (subclass 189) or a Skilled Nominated visa (subclass 190), granting you permanent residency. As a permanent resident, you can enjoy a high standard of living, excellent healthcare, and financial freedom. Australia offers a secure environment with abundant career opportunities and the potential for high earnings.
+          </p>
+        </div>
+    
       </section>
 
       {/* Facts About Australia */}
