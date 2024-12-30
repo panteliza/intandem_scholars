@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import AcademicPlanningImage from "../assets/uuu.jpg"; // Replace with the correct path
+import AcademicPlanningImage from "../assets/bbbb.jpg"; // Replace with the correct path
 
 const AcademicPlanningPage = () => {
   useEffect(() => {

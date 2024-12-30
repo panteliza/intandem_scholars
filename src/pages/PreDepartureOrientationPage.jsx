@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import PreDepartureImage from "../assets/uuu.jpg"; // Replace with the correct path
+import PreDepartureImage from "../assets/cccc.jpg"; // Replace with the correct path
 
 const PreDepartureOrientationPage = () => {
   useEffect(() => {

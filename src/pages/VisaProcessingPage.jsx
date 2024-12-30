@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import VisaProcessingImage from "../assets/uuu.jpg"; // Replace with the correct path
+import VisaProcessingImage from "../assets/aaaa.jpg"; // Replace with the correct path
 
 const VisaProcessingPage = () => {
   useEffect(() => {

@@ -11,26 +11,23 @@ const InfoCards = () => {
       title: "CONSULTATION",
       description:
         "We provide personalized consultation to guide students in every step of their journey, from selecting colleges to ensuring their visa process is seamless and stress-free. Trust us to turn your global education dreams into reality.",
-      gradient: "from-[#FFDEE9] to-[#B5FFFC]",
-      hoverGradient: "from-[#6A11CB] via-[#2575FC] to-[#FF6A00]",
     },
     {
       icon: expertiseIcon,
       title: "OUR EXPERTISE",
       description:
         "With years of experience in visa processes and admissions guidance, our team provides unmatched expertise to help students navigate their academic and career journeys with confidence and success.",
-      gradient: "from-[#D4FC79] to-[#96E6A1]",
-      hoverGradient: "from-[#FF9A9E] via-[#FAD0C4] to-[#FBC2EB]",
     },
     {
       icon: successIcon,
       title: "OUR SUCCESS",
       description:
         "Our success is defined by the achievements of our students. With countless success stories, we continue to thrive on referrals from satisfied clients who trust us to make their dreams a reality.",
-      gradient: "from-[#84FAB0] to-[#8FD3F4]",
-      hoverGradient: "from-[#89F7FE] via-[#66A6FF] to-[#8E44AD]",
     },
   ];
+
+  const gradient = "from-[#84FAB0] to-[#8FD3F4]";
+  const hoverGradient = "from-[#89F7FE] via-[#66A6FF] to-[#8E44AD]";
 
   return (
     <div className="bg-gradient-to-r from-[#F0F4FF] to-[#E4ECF6] py-10 px-8">
@@ -45,7 +42,7 @@ const InfoCards = () => {
             <div
               key={index}
               ref={ref}
-              className={`relative bg-gradient-to-r ${card.gradient} rounded-lg shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-2xl group ${
+              className={`relative bg-gradient-to-r ${gradient} rounded-lg shadow-lg p-6 text-center transition-transform transform hover:scale-105 hover:shadow-2xl group ${
                 inView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
@@ -53,12 +50,12 @@ const InfoCards = () => {
             >
               {/* Hover Gradient Background */}
               <div
-                className={`absolute inset-0 bg-gradient-to-r ${card.hoverGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg z-0`}
+                className={`absolute inset-0 bg-gradient-to-r ${hoverGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg z-0`}
               ></div>
 
               {/* Icon with Background */}
               <div
-                className={`w-20 h-20 mx-auto rounded-full flex justify-center items-center mb-4 relative z-10 bg-gradient-to-r ${card.gradient} group-hover:bg-gradient-to-r ${card.hoverGradient} transition-all`}
+                className={`w-20 h-20 mx-auto rounded-full flex justify-center items-center mb-4 relative z-10 bg-gradient-to-r ${gradient} group-hover:bg-gradient-to-r ${hoverGradient} transition-all`}
               >
                 <img
                   src={card.icon}
@@ -91,7 +88,7 @@ const InfoCards = () => {
 
               {/* Bottom Border */}
               <div
-                className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${card.hoverGradient}`}
+                className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${hoverGradient}`}
               ></div>
             </div>
           );
