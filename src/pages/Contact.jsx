@@ -62,7 +62,7 @@ const Contact = () => {
 
           <p
             ref={textRef}
-            className="mt-4 text-[15px] sm:text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-600 to-red-700 opacity-0"
+            className="mt-4 text-[15px] sm:text-lg text-gray-700"
             style={{ animation: 'fadeInUp 1s ease-out forwards', animationPlayState: 'paused' }}
           >
             Your trusted partner in turning dreams into global realities. At Intandem Scholars, we specialize in guiding you through every step of your journey to study, work, or settle abroad. From selecting the right path to navigating complex visa processes, we empower aspiring individuals to unlock a world of opportunities.
