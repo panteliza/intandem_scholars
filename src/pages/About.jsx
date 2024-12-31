@@ -37,19 +37,14 @@ const AboutIntandem = () => {
             <h2 className="text-3xl font-semibold text-white animate-fadeIn delay-300">
               Welcome to Intandem Scholars
             </h2>
-            <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal ">
-              
-Welcome to InTandem Scholars, a leading education consultancy in Nepal. Based in Kathmandu, we specialize in guiding students through the journey of studying abroad. Our expert consultants provide personalized support in university selection, course guidance, scholarship assistance, admissions counseling, and visa processing.
-
-At InTandem Scholars, we are committed to helping you achieve your academic and career aspirations. Whether you aim to study in Australia, Canada, the USA, the UK, South Korea, or Europe, we are here to make your dreams a reality.
-
-
+            <p className="text-lg leading-relaxed text-justify text-white animate-fadeIn delay-500">
+              Welcome to InTandem Scholars, a leading education consultancy in Nepal. Based in Kathmandu, we specialize in guiding students through the journey of studying abroad. Our expert consultants provide personalized support in university selection, course guidance, scholarship assistance, admissions counseling, and visa processing.
             </p>
-            <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal delay-500">
-             
+            <p className="text-lg leading-relaxed text-justify text-white animate-fadeIn delay-700">
+              At InTandem Scholars, we are committed to helping you achieve your academic and career aspirations. Whether you aim to study in Australia, Canada, the USA, the UK, South Korea, or Europe, we are here to make your dreams a reality.
             </p>
-            <p className="text-lg leading-relaxed text-justify bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradientReveal delay-700">
-            What sets us apart is our dedication to understanding your unique goals and aspirations, ensuring tailored solutions at every step. With a proven track record of success, a strong network of global institutions, and unwavering support, we strive to simplify the complexities of studying abroad, so you can focus on your future. Join us and embark on your path to a brighter future.
+            <p className="text-lg leading-relaxed text-justify text-white animate-fadeIn delay-900">
+              What sets us apart is our dedication to understanding your unique goals and aspirations, ensuring tailored solutions at every step. With a proven track record of success, a strong network of global institutions, and unwavering support, we strive to simplify the complexities of studying abroad, so you can focus on your future. Join us and embark on your path to a brighter future.
             </p>
           </div>
         </div>
@@ -91,37 +86,6 @@ At InTandem Scholars, we are committed to helping you achieve your academic and 
           }
         }
 
-        /* Gradient shimmer effect */
-        @keyframes gradientCycle {
-          0% {
-            background-position: 0% 50%;
-          }
-          25% {
-            background-position: 50% 0%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          75% {
-            background-position: 50% 100%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-
-        /* Gradient reveal animation */
-        @keyframes gradientReveal {
-          0% {
-            opacity: 0;
-            transform: translateY(20px) rotateX(90deg);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0) rotateX(0deg);
-          }
-        }
-
         /* Classes */
         .animate-fadeIn {
           animation: fadeIn 1.2s ease-in-out forwards;
@@ -133,22 +97,6 @@ At InTandem Scholars, we are committed to helping you achieve your academic and 
 
         .animate-zoomIn {
           animation: zoomIn 1.5s ease-out forwards;
-        }
-
-        .animate-gradientReveal {
-          animation: gradientReveal 1.2s ease-in-out forwards;
-          display: inline-block;
-          transform-origin: bottom;
-          background-size: 400% 400%;
-          animation: gradientCycle 6s ease infinite;
-        }
-
-        .animate-gradientReveal.delay-500 {
-          animation-delay: 0.5s;
-        }
-
-        .animate-gradientReveal.delay-700 {
-          animation-delay: 0.7s;
         }
       `}</style>
     </div>

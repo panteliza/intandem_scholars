@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="p-8 text-center">
           <h1
             ref={headingRef}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-700 to-pink-700 text-2xl sm:text-4xl font-semibold opacity-0"
+            className=" text-[#2D4591] text-2xl sm:text-4xl font-semibold opacity-0"
             style={{ animation: 'fadeInDown 1s ease-out forwards', animationPlayState: 'paused' }}
           >
             Welcome to Intandem Scholars
