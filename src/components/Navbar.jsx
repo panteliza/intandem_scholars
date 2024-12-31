@@ -35,7 +35,7 @@ const abroad = [
 const navLinks = [
   { path: '/about', label: 'About' },
  
-  { path: '/contact', label: 'Contact us' },
+  { path: '/contact', label: 'Contact Us' },
 ];
 
 const Navbar = () => {
