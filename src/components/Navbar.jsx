@@ -4,7 +4,7 @@ import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
 import { MdOutlineClose } from 'react-icons/md';
 import { FiAlignJustify } from "react-icons/fi";
-import logo from '../assets/logo1.png'; // Main logo
+import logo from '../assets/logo2.png'; // Main logo
 import logo1 from '../assets/logo2.png'; // Sidebar logo
 import img1 from '../assets/facebook.png';
 import img2 from '../assets/googlemap.png';
@@ -106,15 +106,8 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center  ">
-          <img src={logo} alt="Muktinath Girls Hostel Logo" className="h-[70px] w-[80px]" />
-          <div>
-            <h1 className="text-[17px] sm:text-3xl font-bold text-[#2D4591]">
-              Intandem Scholars
-            </h1>
-            <p className="text-[13px] sm:text-[15px] text-[#03C300]">
-             "From Admission to Arrival-Together"
-            </p>
-          </div>
+          <img src={logo} alt="Intandem Scholars Logo" className="h-[70px] w-[330px]" />
+          
         </div>
 
         {/* Desktop Navigation */}
@@ -230,7 +223,7 @@ const Navbar = () => {
               <img
                 src={logo1}
                 alt="Intandem Scholars Sidebar Logo"
-                className="h-[140px] object-contain zoom-effect "
+                className="h-[130px] object-contain zoom-effect "
               />
             </div>
             <Link

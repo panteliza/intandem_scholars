@@ -67,11 +67,9 @@ const Contact = () => {
         >
           <FaPhoneAlt className="text-blue-500 text-4xl mb-4 shiver-icon transition duration-300 hover:text-blue-800" />
           <h3 className="font-bold sm:text-[20px] text-[18px] text-gray-800 mb-2">
-            Our Contact
+            Our WhatsApp
           </h3>
-          <a href="tel:+97714534655" className="text-center text-gray-700 hover:text-blue-500">
-             +977 1 4534655
-          </a>
+         
           <a href="tel:+9779801025694" className="text-center text-gray-700 hover:text-blue-500">
             +977 9801025694
           </a>

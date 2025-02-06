@@ -10,6 +10,7 @@ import { MdLocationOn } from 'react-icons/md';
 import { BsTelephoneFill } from 'react-icons/bs';
 import img4 from '../assets/linkedin.png';
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
 
   const contactItems = [
     { icon: <BsTelephoneFill />, link: "tel: +977 01-4534655", label: "01-4534655" },
-    { icon: <HiOutlineDevicePhoneMobile  />, link: "tel: +977  9801025694", label: "977 9801025694" },
+    { icon: <FaWhatsapp   />, link: "tel: +977  9801025694", label: "977 9801025694" },
     { icon: <HiOutlineMail />, link: "mailto:intandemscholars@gmail.com", label: "intandemscholars@gmail.com" },
     { icon: <MdLocationOn />, label: "Battisputali Marg, Purano Baneshwor, Kathmandu,Nepal" },
   ];
@@ -69,7 +70,7 @@ const Footer = () => {
     <img
       src={aawazLogo}
       alt="Aawaz Logo"
-      className="h-[200px] w-[300px] transition-transform duration-700 ease-in-out hover:scale-110 mb-1"
+      className="h-[100px] w-[100px] transition-transform duration-700 ease-in-out hover:scale-110 mb-1"
     />
   </Link>
   <div className="flex gap-1 mt-0">
