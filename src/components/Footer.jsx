@@ -65,12 +65,12 @@ const Footer = () => {
         }}
       >
         {/* Logo Section */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
   <Link to="/">
     <img
       src={aawazLogo}
-      alt="Aawaz Logo"
-      className="h-[100px] w-[100px] transition-transform duration-700 ease-in-out hover:scale-110 mb-1"
+      alt="Intandem Logo"
+      className=" w-[250px] transition-transform duration-700 ease-in-out hover:scale-110 mb-1"
     />
   </Link>
   <div className="flex gap-1 mt-0">
@@ -95,9 +95,7 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="flex flex-col items-center font-semibold text-[16px] gap-2">
-          <div className="font-bold text-[18px] sm:text-[20px] text-gray-800 hover:text-gray-500 text-center">
-            Intandem Scholars
-          </div>
+         
           {contactItems.map((item, index) => (
             <ContactItem key={index} icon={item.icon} link={item.link} label={item.label} />
           ))}

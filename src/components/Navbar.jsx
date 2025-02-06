@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 
@@ -39,6 +39,11 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+   useEffect(() => {
+      // Scroll to the top when the page loads
+      window.scrollTo(0, 0);
+    }, []);
+  
   const [showDropdown, setShowDropdown] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -105,8 +110,8 @@ const Navbar = () => {
 
 
         {/* Logo */}
-        <div className="flex items-center  ">
-          <img src={logo} alt="Intandem Scholars Logo" className="h-[70px] w-[330px]" />
+        <div className="flex items-center  h-[80px]">
+          <img src={logo} alt="Intandem Scholars Logo" className=" w-[330px]" />
           
         </div>
 
